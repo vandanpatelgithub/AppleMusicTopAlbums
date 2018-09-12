@@ -1,0 +1,1247 @@
+{
+    "feed": {
+        "title": "Top Albums",
+        "id": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/50/non-explicit.json",
+        "author": {
+            "name": "iTunes Store",
+            "uri": "http://wwww.apple.com/us/itunes/"
+        },
+        "links": [
+            {
+                "self": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/50/non-explicit.json"
+            },
+            {
+                "alternate": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?genreId=34&popId=82&app=music"
+            }
+        ],
+        "copyright": "Copyright © 2018 Apple Inc. Все права защищены.",
+        "country": "us",
+        "icon": "http://itunes.apple.com/favicon.ico",
+        "updated": "2018-09-09T02:00:15.000-07:00",
+        "results": [
+            {
+                "artistName": "Ozuna",
+                "id": "1433976640",
+                "releaseDate": "2018-08-24",
+                "name": "Aura",
+                "kind": "album",
+                "copyright": "℗ 2018 VP Records Corp./Dimelo Vi Dist. by Sony Music Entertainment U.S. Latin LLC",
+                "artistId": "283578837",
+                "artistUrl": "https://itunes.apple.com/us/artist/ozuna/283578837?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/d7/60/f7/d760f7bf-e2bc-e48e-afcd-b9b562ad4c2f/697691884080.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "1119",
+                        "name": "Urbano latino",
+                        "url": "https://itunes.apple.com/us/genre/id1119"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "12",
+                        "name": "Latino",
+                        "url": "https://itunes.apple.com/us/genre/id12"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/aura/1433976640?app=music"
+            },
+            {
+                "artistName": "Various Artists",
+                "id": "1299856714",
+                "releaseDate": "2017-12-08",
+                "name": "The Greatest Showman (Original Motion Picture Soundtrack)",
+                "kind": "album",
+                "copyright": "℗ 2017 This compilation Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States. Motion Picture Artwork, Photos, and Fox Trademarks and Logos TM and © 2017 Twentieth Century Fox Film Corporation.",
+                "artistId": "36270",
+                "artistUrl": "https://itunes.apple.com/us/artist/various-artists/36270?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/c1/7b/a9/c17ba975-34aa-ee68-d3c9-e1db840fa06b/075679886613.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "16",
+                        "name": "Soundtrack",
+                        "url": "https://itunes.apple.com/us/genre/id16"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/the-greatest-showman-original-motion-picture-soundtrack/1299856714?app=music"
+            },
+            {
+                "artistName": "Lauren Daigle",
+                "id": "1409149359",
+                "releaseDate": "2018-09-07",
+                "name": "Look Up Child",
+                "kind": "album",
+                "copyright": "℗ 2018 Centricity Music",
+                "artistId": "722177758",
+                "artistUrl": "https://itunes.apple.com/us/artist/lauren-daigle/722177758?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/e9/b8/8f/e9b88f7c-1ba8-4ed6-53ef-92ad2a13ba48/00829619167009.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "22",
+                        "name": "Christian & Gospel",
+                        "url": "https://itunes.apple.com/us/genre/id22"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/look-up-child/1409149359?app=music"
+            },
+            {
+                "artistName": "Queen Naija",
+                "id": "1413905925",
+                "releaseDate": "2018-07-27",
+                "name": "Queen Naija - EP",
+                "kind": "album",
+                "copyright": "Capitol Records; ℗ 2018 Queen Naija, under exclusive license to UMG Recordings, Inc.",
+                "artistId": "1392861271",
+                "artistUrl": "https://itunes.apple.com/us/artist/queen-naija/1392861271?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/95/c0/65/95c06543-1926-1086-f213-7863d4f5bc10/00602567799870.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "15",
+                        "name": "R&B/Soul",
+                        "url": "https://itunes.apple.com/us/genre/id15"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/queen-naija-ep/1413905925?app=music"
+            },
+            {
+                "artistName": "Paul McCartney",
+                "id": "1399826275",
+                "releaseDate": "2018-09-07",
+                "name": "Egypt Station",
+                "kind": "album",
+                "copyright": "Capitol Records; ℗ 2018 MPL Communications Inc/Ltd, under exclusive license to UMG Recordings, Inc.",
+                "artistId": "12224",
+                "artistUrl": "https://itunes.apple.com/us/artist/paul-mccartney/12224?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/60/f1/4c/60f14ccb-c515-13a6-ed27-897ba7a5a767/00602567545002.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/egypt-station/1399826275?app=music"
+            },
+            {
+                "artistName": "Luke Combs",
+                "id": "1376705241",
+                "releaseDate": "2018-06-01",
+                "name": "This One’s for You Too (Deluxe Edition)",
+                "kind": "album",
+                "copyright": "℗ 2018 River House Artists LLC, under exclusive license to Sony Music Entertainment",
+                "artistId": "815635315",
+                "artistUrl": "https://itunes.apple.com/us/artist/luke-combs/815635315?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/fa/8d/22/fa8d22a8-4525-e073-46f7-7f6026578ea6/886447048443.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "1039",
+                        "name": "Honky Tonk",
+                        "url": "https://itunes.apple.com/us/genre/id1039"
+                    },
+                    {
+                        "genreId": "1037",
+                        "name": "Contemporary Country",
+                        "url": "https://itunes.apple.com/us/genre/id1037"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/this-ones-for-you-too-deluxe-edition/1376705241?app=music"
+            },
+            {
+                "artistName": "Billie Eilish",
+                "id": "1322774442",
+                "releaseDate": "2017-12-22",
+                "name": "dont smile at me",
+                "kind": "album",
+                "copyright": "℗ 2017 Darkroom/Interscope Records",
+                "artistId": "1065981054",
+                "artistUrl": "https://itunes.apple.com/us/artist/billie-eilish/1065981054?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/5b/98/02/5b98021c-f603-c1ed-d97c-95460eb6952d/UMG_cvrart_00602567328056_01_RGB72_3000x3000_17UM1IM17026.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "20",
+                        "name": "Alternative",
+                        "url": "https://itunes.apple.com/us/genre/id20"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    },
+                    {
+                        "genreId": "7",
+                        "name": "Electronic",
+                        "url": "https://itunes.apple.com/us/genre/id7"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/dont-smile-at-me/1322774442?app=music"
+            },
+            {
+                "artistName": "H.E.R.",
+                "id": "1294890052",
+                "releaseDate": "2017-10-20",
+                "name": "H.E.R.",
+                "kind": "album",
+                "copyright": "℗ 2017 RCA Records, a division of Sony Music Entertainment",
+                "artistId": "123049323",
+                "artistUrl": "https://itunes.apple.com/us/artist/h-e-r/123049323?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/eb/fe/49/ebfe49b4-a3f6-3cdf-79d2-ad9cd4e0acb6/886446799513.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "15",
+                        "name": "R&B/Soul",
+                        "url": "https://itunes.apple.com/us/genre/id15"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "1136",
+                        "name": "Contemporary R&B",
+                        "url": "https://itunes.apple.com/us/genre/id1136"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/h-e-r/1294890052?app=music"
+            },
+            {
+                "artistName": "Taylor Swift",
+                "id": "1274999981",
+                "releaseDate": "2017-11-10",
+                "name": "reputation",
+                "kind": "album",
+                "copyright": "℗ 2017 Big Machine Label Group, LLC",
+                "artistId": "159260351",
+                "artistUrl": "https://itunes.apple.com/us/artist/taylor-swift/159260351?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/ae/8f/46/ae8f4677-0576-a1e4-e360-1563602c9bfb/UMG_cvrart_00843930033133_01_RGB72_3000x3000_17UM1IM24651.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "1135",
+                        "name": "Teen Pop",
+                        "url": "https://itunes.apple.com/us/genre/id1135"
+                    },
+                    {
+                        "genreId": "1131",
+                        "name": "Adult Contemporary",
+                        "url": "https://itunes.apple.com/us/genre/id1131"
+                    },
+                    {
+                        "genreId": "17",
+                        "name": "Dance",
+                        "url": "https://itunes.apple.com/us/genre/id17"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/reputation/1274999981?app=music"
+            },
+            {
+                "artistName": "twenty one pilots",
+                "id": "1422828208",
+                "releaseDate": "2018-10-05",
+                "name": "Trench",
+                "kind": "album",
+                "copyright": "℗ 2018 Fueled By Ramen LLC for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                "artistId": "349736311",
+                "artistUrl": "https://itunes.apple.com/us/artist/twenty-one-pilots/349736311?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/ac/67/13/ac671336-bff2-fcc0-3817-bfff5d7e746b/075679864789.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "20",
+                        "name": "Alternative",
+                        "url": "https://itunes.apple.com/us/genre/id20"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/trench/1422828208?app=music"
+            },
+            {
+                "artistName": "Imagine Dragons",
+                "id": "1411625594",
+                "releaseDate": "2017-06-23",
+                "name": "Evolve",
+                "kind": "album",
+                "copyright": "℗ 2018 KIDinaKORNER/Interscope Records",
+                "artistId": "358714030",
+                "artistUrl": "https://itunes.apple.com/us/artist/imagine-dragons/358714030?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/40/46/80/404680b2-9f25-ae64-66ab-91b09666028b/00602567491255.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "20",
+                        "name": "Alternative",
+                        "url": "https://itunes.apple.com/us/genre/id20"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "1133",
+                        "name": "Pop/Rock",
+                        "url": "https://itunes.apple.com/us/genre/id1133"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/evolve/1411625594?app=music"
+            },
+            {
+                "artistName": "Kane Brown",
+                "id": "1434750138",
+                "releaseDate": "2018-11-09",
+                "name": "Experiment",
+                "kind": "album",
+                "copyright": "℗ 2018 Sony Music Entertainment",
+                "artistId": "930928857",
+                "artistUrl": "https://itunes.apple.com/us/artist/kane-brown/930928857?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/51/cd/f6/51cdf669-d810-cb4f-d170-016a5b760f0b/886447273807.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/experiment/1434750138?app=music"
+            },
+            {
+                "artistName": "BTS",
+                "id": "1430129013",
+                "releaseDate": "2018-08-24",
+                "name": "Love Yourself 結 'Answer'",
+                "kind": "album",
+                "copyright": "℗ 2018 Bighit Entertainment",
+                "artistId": "883131348",
+                "artistUrl": "https://itunes.apple.com/us/artist/bts/883131348?app=music",
+                "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/3c/64/b4/3c64b4d9-b8da-4df2-ca1f-2dbe6d2f1e85/192562871591.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "51",
+                        "name": "K-Pop",
+                        "url": "https://itunes.apple.com/us/genre/id51"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/love-yourself-%E7%B5%90-answer/1430129013?app=music"
+            },
+            {
+                "artistName": "Ariana Grande",
+                "id": "1399202900",
+                "releaseDate": "2018-08-17",
+                "name": "Sweetener",
+                "kind": "album",
+                "copyright": "℗ 2018 Republic Records, a Division of UMG Recordings, Inc.",
+                "artistId": "412778295",
+                "artistUrl": "https://itunes.apple.com/us/artist/ariana-grande/412778295?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/e4/7c/89/e47c8989-f0bc-ee42-044a-1521a4eb54be/00602567808008.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "23",
+                        "name": "Vocal",
+                        "url": "https://itunes.apple.com/us/genre/id23"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/sweetener/1399202900?app=music"
+            },
+            {
+                "artistName": "Why Don't We",
+                "id": "1423280409",
+                "releaseDate": "2018-08-31",
+                "name": "8 Letters",
+                "kind": "album",
+                "copyright": "℗ 2018 Signature Entertainment, LLC under exclusive license to Atlantic Recording Corporation for the United States and WEA International Inc. for the world excluding the United States",
+                "artistId": "1161814111",
+                "artistUrl": "https://itunes.apple.com/us/artist/why-dont-we/1161814111?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/9f/a0/aa/9fa0aaf2-4622-c382-6086-f86d683688d7/075679865298.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/8-letters/1423280409?app=music"
+            },
+            {
+                "artistName": "Masego",
+                "id": "1434129681",
+                "releaseDate": "2018-09-07",
+                "name": "Lady Lady",
+                "kind": "album",
+                "copyright": "℗ 2018 EQT Recordings",
+                "artistId": "659203770",
+                "artistUrl": "https://itunes.apple.com/us/artist/masego/659203770?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/2d/a6/89/2da68974-37df-08e1-34e2-1798ec29e061/00842812109249.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "15",
+                        "name": "R&B/Soul",
+                        "url": "https://itunes.apple.com/us/genre/id15"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/lady-lady/1434129681?app=music"
+            },
+            {
+                "artistName": "Dan + Shay",
+                "id": "1383989073",
+                "releaseDate": "2018-06-22",
+                "name": "Dan + Shay",
+                "kind": "album",
+                "copyright": "℗ 2018 Warner Music Nashville LLC for the U.S. and WEA International Inc. for the world outside the U.S.",
+                "artistId": "690319057",
+                "artistUrl": "https://itunes.apple.com/us/artist/dan-shay/690319057?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/76/b6/e4/76b6e4e2-5d85-1d5c-d524-c3b1f9cb8f8f/093624906407.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "1037",
+                        "name": "Contemporary Country",
+                        "url": "https://itunes.apple.com/us/genre/id1037"
+                    },
+                    {
+                        "genreId": "1039",
+                        "name": "Honky Tonk",
+                        "url": "https://itunes.apple.com/us/genre/id1039"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/dan-shay/1383989073?app=music"
+            },
+            {
+                "artistName": "Ed Sheeran",
+                "id": "1193701079",
+                "releaseDate": "2017-03-03",
+                "name": "÷ (Deluxe)",
+                "kind": "album",
+                "copyright": "℗ 2017 Asylum Records UK, a division of Atlantic Records UK, a Warner Music Group company.",
+                "artistId": "183313439",
+                "artistUrl": "https://itunes.apple.com/us/artist/ed-sheeran/183313439?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/9a/35/95/9a3595c7-c675-fd74-352f-44e3638ac123/190295851286.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "10",
+                        "name": "Singer/Songwriter",
+                        "url": "https://itunes.apple.com/us/genre/id10"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/deluxe/1193701079?app=music"
+            },
+            {
+                "artistName": "Various Artists",
+                "id": "1168827405",
+                "releaseDate": "2016-11-19",
+                "name": "Moana (Original Motion Picture Soundtrack) [Deluxe Edition]",
+                "kind": "album",
+                "copyright": "℗ 2016 Walt Disney Records",
+                "artistId": "36270",
+                "artistUrl": "https://itunes.apple.com/us/artist/various-artists/36270?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music71/v4/07/81/64/07816426-5f68-d71d-62f1-d469d8187038/UMG_cvrart_00050087352875_01_RGB72_1800x1800_16UMGIM75346.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "16",
+                        "name": "Soundtrack",
+                        "url": "https://itunes.apple.com/us/genre/id16"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/moana-original-motion-picture-soundtrack-deluxe-edition/1168827405?app=music"
+            },
+            {
+                "artistName": "Luke Combs",
+                "id": "1228887671",
+                "releaseDate": "2017-06-02",
+                "name": "This One's for You",
+                "kind": "album",
+                "copyright": "℗ 2017 River House Artists LLC, under exclusive license to Sony Music Entertainment",
+                "artistId": "815635315",
+                "artistUrl": "https://itunes.apple.com/us/artist/luke-combs/815635315?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/24/36/7b/24367b31-e995-8da3-36c8-685595f92d55/886446460840.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "1037",
+                        "name": "Contemporary Country",
+                        "url": "https://itunes.apple.com/us/genre/id1037"
+                    },
+                    {
+                        "genreId": "1039",
+                        "name": "Honky Tonk",
+                        "url": "https://itunes.apple.com/us/genre/id1039"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/this-ones-for-you/1228887671?app=music"
+            },
+            {
+                "artistName": "Cast Of “Mamma Mia! Here We Go Again”",
+                "id": "1380464428",
+                "releaseDate": "2018-07-13",
+                "name": "Mamma Mia! Here We Go Again (Original Motion Picture Soundtrack)",
+                "kind": "album",
+                "copyright": "A Polydor Records release; ℗ 2018 Littlestar Services Limited, under exclusive licence to Universal Music Operations Limited",
+                "artistId": "1379051690",
+                "artistUrl": "https://itunes.apple.com/us/artist/cast-of-mamma-mia-here-we-go-again/1379051690?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/03/91/9d/03919d91-383d-11b0-f1cb-d6ff42bfe8cf/00602567666585.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "16",
+                        "name": "Soundtrack",
+                        "url": "https://itunes.apple.com/us/genre/id16"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/mamma-mia-here-we-go-again-original-motion-picture/1380464428?app=music"
+            },
+            {
+                "artistName": "NF",
+                "id": "1276828373",
+                "releaseDate": "2017-10-06",
+                "name": "Perception",
+                "kind": "album",
+                "copyright": "Capitol Records;℗2017 NF Real Music, LLC",
+                "artistId": "898094630",
+                "artistUrl": "https://itunes.apple.com/us/artist/nf/898094630?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/18/02/ca/1802caa5-3706-c501-3bc4-041d7f82b8e6/UMG_cvrart_00602547935885_01_RGB72_1800x1800_17UM1IM17084.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "1076",
+                        "name": "Rap",
+                        "url": "https://itunes.apple.com/us/genre/id1076"
+                    },
+                    {
+                        "genreId": "22",
+                        "name": "Christian & Gospel",
+                        "url": "https://itunes.apple.com/us/genre/id22"
+                    },
+                    {
+                        "genreId": "1094",
+                        "name": "CCM",
+                        "url": "https://itunes.apple.com/us/genre/id1094"
+                    },
+                    {
+                        "genreId": "1097",
+                        "name": "Christian Rap",
+                        "url": "https://itunes.apple.com/us/genre/id1097"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/perception/1276828373?app=music"
+            },
+            {
+                "artistName": "Bobby Brown",
+                "id": "99031",
+                "releaseDate": "1988-06-20",
+                "name": "Don't Be Cruel",
+                "kind": "album",
+                "copyright": "℗ 1988 UMG Recordings, Inc.",
+                "artistId": "33876",
+                "artistUrl": "https://itunes.apple.com/us/artist/bobby-brown/33876?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Features/cd/76/63/dj.aiqoecfo.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "15",
+                        "name": "R&B/Soul",
+                        "url": "https://itunes.apple.com/us/genre/id15"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "1073",
+                        "name": "Hip-Hop",
+                        "url": "https://itunes.apple.com/us/genre/id1073"
+                    },
+                    {
+                        "genreId": "17",
+                        "name": "Dance",
+                        "url": "https://itunes.apple.com/us/genre/id17"
+                    },
+                    {
+                        "genreId": "1136",
+                        "name": "Contemporary R&B",
+                        "url": "https://itunes.apple.com/us/genre/id1136"
+                    },
+                    {
+                        "genreId": "7",
+                        "name": "Electronic",
+                        "url": "https://itunes.apple.com/us/genre/id7"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/dont-be-cruel/99031?app=music"
+            },
+            {
+                "artistName": "Jason Aldean",
+                "id": "1354570152",
+                "releaseDate": "2018-04-13",
+                "name": "Rearview Town",
+                "kind": "album",
+                "copyright": "℗ 2018 Macon Music, LLC under exclusive license to Broken Bow Records",
+                "artistId": "63684710",
+                "artistUrl": "https://itunes.apple.com/us/artist/jason-aldean/63684710?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/97/87/8c/97878c51-f420-eb73-4f81-fdebf688c79c/4050538376074.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    },
+                    {
+                        "genreId": "1037",
+                        "name": "Contemporary Country",
+                        "url": "https://itunes.apple.com/us/genre/id1037"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/rearview-town/1354570152?app=music"
+            },
+            {
+                "artistName": "Various Artists",
+                "id": "1154238159",
+                "releaseDate": "2016-09-23",
+                "name": "Trolls (Original Motion Picture Soundtrack)",
+                "kind": "album",
+                "copyright": "℗ This Compilation (P) 2016 RCA Records, a division of Sony Music Entertainment",
+                "artistId": "80204262",
+                "artistUrl": "https://itunes.apple.com/us/artist/various-artists/80204262?app=music",
+                "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music71/v4/24/0e/9d/240e9d71-9861-e7b5-a4f5-ef9fe856048d/886445915211.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "4",
+                        "name": "Children's Music",
+                        "url": "https://itunes.apple.com/us/genre/id4"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "16",
+                        "name": "Soundtrack",
+                        "url": "https://itunes.apple.com/us/genre/id16"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/trolls-original-motion-picture-soundtrack/1154238159?app=music"
+            },
+            {
+                "artistName": "Bruno Mars",
+                "id": "1161503945",
+                "releaseDate": "2016-11-18",
+                "name": "24K Magic",
+                "kind": "album",
+                "copyright": "℗ 2016 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company",
+                "artistId": "278873078",
+                "artistUrl": "https://itunes.apple.com/us/artist/bruno-mars/278873078?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/40/98/ed/4098edc3-1ae9-4da7-4778-b9d3b8b2a846/075679904119.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "7",
+                        "name": "Electronic",
+                        "url": "https://itunes.apple.com/us/genre/id7"
+                    },
+                    {
+                        "genreId": "15",
+                        "name": "R&B/Soul",
+                        "url": "https://itunes.apple.com/us/genre/id15"
+                    },
+                    {
+                        "genreId": "1143",
+                        "name": "Soul",
+                        "url": "https://itunes.apple.com/us/genre/id1143"
+                    },
+                    {
+                        "genreId": "1136",
+                        "name": "Contemporary R&B",
+                        "url": "https://itunes.apple.com/us/genre/id1136"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    },
+                    {
+                        "genreId": "17",
+                        "name": "Dance",
+                        "url": "https://itunes.apple.com/us/genre/id17"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/24k-magic/1161503945?app=music"
+            },
+            {
+                "artistName": "Eminem",
+                "id": "1434766532",
+                "releaseDate": "2018-08-31",
+                "name": "Kamikaze",
+                "kind": "album",
+                "copyright": "An Aftermath/Shady/Interscope Records Release; ℗ 2018 Aftermath Records",
+                "artistId": "111051",
+                "artistUrl": "https://itunes.apple.com/us/artist/eminem/111051?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/aa/3b/6b/aa3b6ba1-d443-6d5f-fc8b-2c651e50b8eb/00602577046421.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/kamikaze/1434766532?app=music"
+            },
+            {
+                "artistName": "Shawn Mendes",
+                "id": "1376115721",
+                "releaseDate": "2018-05-25",
+                "name": "Shawn Mendes",
+                "kind": "album",
+                "copyright": "℗ 2018 Island Records, a division of UMG Recordings, Inc.",
+                "artistId": "890403665",
+                "artistUrl": "https://itunes.apple.com/us/artist/shawn-mendes/890403665?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/c8/ee/e9/c8eee994-a95c-3ddf-1307-4929d52c540b/00602567569466.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "10",
+                        "name": "Singer/Songwriter",
+                        "url": "https://itunes.apple.com/us/genre/id10"
+                    },
+                    {
+                        "genreId": "1064",
+                        "name": "Contemporary Singer/Songwriter",
+                        "url": "https://itunes.apple.com/us/genre/id1064"
+                    },
+                    {
+                        "genreId": "17",
+                        "name": "Dance",
+                        "url": "https://itunes.apple.com/us/genre/id17"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    },
+                    {
+                        "genreId": "1135",
+                        "name": "Teen Pop",
+                        "url": "https://itunes.apple.com/us/genre/id1135"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/shawn-mendes/1376115721?app=music"
+            },
+            {
+                "artistName": "Cole Swindell",
+                "id": "1410277094",
+                "releaseDate": "2018-08-17",
+                "name": "All of It",
+                "kind": "album",
+                "copyright": "℗ 2018 Warner Music Nashville LLC for the U.S. and WEA International Inc. for the world outside the U.S.",
+                "artistId": "354625084",
+                "artistUrl": "https://itunes.apple.com/us/artist/cole-swindell/354625084?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/00/7c/dd/007cdd95-f3b7-c4f8-ca9d-9eaf839f6c2a/093624905202.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/all-of-it/1410277094?app=music"
+            },
+            {
+                "artistName": "Charlie Puth",
+                "id": "1293229669",
+                "releaseDate": "2018-05-11",
+                "name": "Voicenotes",
+                "kind": "album",
+                "copyright": "℗ 2018 Artist Partner Group, Inc. for the United States and WEA International Inc. for the world outside of the United States. A Warner Music Group Company.",
+                "artistId": "336249253",
+                "artistUrl": "https://itunes.apple.com/us/artist/charlie-puth/336249253?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/95/b3/0f/95b30fe8-aca6-552e-c113-ecac18b674bc/075679884336.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "1133",
+                        "name": "Pop/Rock",
+                        "url": "https://itunes.apple.com/us/genre/id1133"
+                    },
+                    {
+                        "genreId": "17",
+                        "name": "Dance",
+                        "url": "https://itunes.apple.com/us/genre/id17"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/voicenotes/1293229669?app=music"
+            },
+            {
+                "artistName": "Various Artists",
+                "id": "284301051",
+                "releaseDate": "2008-07-08",
+                "name": "Mamma Mia! (The Movie Soundtrack)",
+                "kind": "album",
+                "copyright": "℗ 2008 Littlestar Services Limited Under Exclusive License to Polydor Ltd.",
+                "artistId": "36270",
+                "artistUrl": "https://itunes.apple.com/us/artist/various-artists/36270?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music/26/b4/7d/mzi.dbilhvrg.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "16",
+                        "name": "Soundtrack",
+                        "url": "https://itunes.apple.com/us/genre/id16"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/mamma-mia-the-movie-soundtrack/284301051?app=music"
+            },
+            {
+                "artistName": "Thomas Rhett",
+                "id": "1261185576",
+                "releaseDate": "2017-09-08",
+                "name": "Life Changes",
+                "kind": "album",
+                "copyright": "℗ 2017 Big Machine Label Group, LLC",
+                "artistId": "502541718",
+                "artistUrl": "https://itunes.apple.com/us/artist/thomas-rhett/502541718?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/67/c6/61/67c6617d-c2cc-fa7b-afb6-40c54ccb60ba/UMG_cvrart_00843930032334_01_RGB72_1800x1800_17UM1IM16267.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "1039",
+                        "name": "Honky Tonk",
+                        "url": "https://itunes.apple.com/us/genre/id1039"
+                    },
+                    {
+                        "genreId": "1037",
+                        "name": "Contemporary Country",
+                        "url": "https://itunes.apple.com/us/genre/id1037"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/life-changes/1261185576?app=music"
+            },
+            {
+                "artistName": "Chris Stapleton",
+                "id": "980334914",
+                "releaseDate": "2015-05-05",
+                "name": "Traveller",
+                "kind": "album",
+                "copyright": "℗ 2015 Mercury Records, a Division of UMG Recordings, Inc.",
+                "artistId": "1752134",
+                "artistUrl": "https://itunes.apple.com/us/artist/chris-stapleton/1752134?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/9b/a8/17/9ba81759-35a4-ea52-38cb-09b98b96077f/UMG_cvrart_00602547223838_01_RGB72_1500x1500_15UMGIM11405.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    },
+                    {
+                        "genreId": "1161",
+                        "name": "Southern Rock",
+                        "url": "https://itunes.apple.com/us/genre/id1161"
+                    },
+                    {
+                        "genreId": "1037",
+                        "name": "Contemporary Country",
+                        "url": "https://itunes.apple.com/us/genre/id1037"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/traveller/980334914?app=music"
+            },
+            {
+                "artistName": "Travis Scott",
+                "id": "1421658111",
+                "releaseDate": "2018-08-03",
+                "name": "ASTROWORLD",
+                "kind": "album",
+                "copyright": "℗ 2018 Epic Records, a division of Sony Music Entertainment. With Cactus Jack and Grand Hustle.",
+                "artistId": "549236696",
+                "artistUrl": "https://itunes.apple.com/us/artist/travis-scott/549236696?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/13/b9/cc/13b9cc7b-a5f9-6578-be88-595634beb5ba/886447235317.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/astroworld/1421658111?app=music"
+            },
+            {
+                "artistName": "Carrie Underwood",
+                "id": "1432044881",
+                "releaseDate": "2018-09-14",
+                "name": "Cry Pretty",
+                "kind": "album",
+                "copyright": "A Capitol Records Nashville Release; ℗ 2018 UMG Recordings, Inc.",
+                "artistId": "63399334",
+                "artistUrl": "https://itunes.apple.com/us/artist/carrie-underwood/63399334?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/2d/ec/ab/2decab97-81a8-e73b-a172-23baff50c1a3/00602567809142.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/cry-pretty/1432044881?app=music"
+            },
+            {
+                "artistName": "Brett Young",
+                "id": "1193398437",
+                "releaseDate": "2017-02-10",
+                "name": "Brett Young",
+                "kind": "album",
+                "copyright": "℗ 2017 Big Machine Label Group, LLC",
+                "artistId": "1084576956",
+                "artistUrl": "https://itunes.apple.com/us/artist/brett-young/1084576956?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music122/v4/91/21/c2/9121c2d4-935a-e566-8f4c-20ed3d7ff2d2/UMG_cvrart_00843930028115_01_RGB72_1800x1800_17UMGIM01226.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "10",
+                        "name": "Singer/Songwriter",
+                        "url": "https://itunes.apple.com/us/genre/id10"
+                    },
+                    {
+                        "genreId": "1063",
+                        "name": "Contemporary Folk",
+                        "url": "https://itunes.apple.com/us/genre/id1063"
+                    },
+                    {
+                        "genreId": "1037",
+                        "name": "Contemporary Country",
+                        "url": "https://itunes.apple.com/us/genre/id1037"
+                    },
+                    {
+                        "genreId": "1039",
+                        "name": "Honky Tonk",
+                        "url": "https://itunes.apple.com/us/genre/id1039"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/brett-young/1193398437?app=music"
+            },
+            {
+                "artistName": "Jon Pardi",
+                "id": "1116232994",
+                "releaseDate": "2016-06-17",
+                "name": "California Sunrise",
+                "kind": "album",
+                "copyright": "℗ 2016 Capitol Records Nashville",
+                "artistId": "371085834",
+                "artistUrl": "https://itunes.apple.com/us/artist/jon-pardi/371085834?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music18/v4/15/d4/fe/15d4fe67-5c83-1b82-22f8-49f68de614f2/UMG_cvrart_00602547824486_01_RGB72_1500x1500_16UMGIM11343.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    },
+                    {
+                        "genreId": "1161",
+                        "name": "Southern Rock",
+                        "url": "https://itunes.apple.com/us/genre/id1161"
+                    },
+                    {
+                        "genreId": "1039",
+                        "name": "Honky Tonk",
+                        "url": "https://itunes.apple.com/us/genre/id1039"
+                    },
+                    {
+                        "genreId": "1037",
+                        "name": "Contemporary Country",
+                        "url": "https://itunes.apple.com/us/genre/id1037"
+                    },
+                    {
+                        "genreId": "1043",
+                        "name": "Urban Cowboy",
+                        "url": "https://itunes.apple.com/us/genre/id1043"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/california-sunrise/1116232994?app=music"
+            },
+            {
+                "artistName": "Ozuna",
+                "id": "1269285897",
+                "releaseDate": "2017-08-25",
+                "name": "Odisea",
+                "kind": "album",
+                "copyright": "℗ 2017 VP Records Corp. Dist. by Sony Music Entertainment U.S. Latin LLC",
+                "artistId": "283578837",
+                "artistUrl": "https://itunes.apple.com/us/artist/ozuna/283578837?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/4b/7b/55/4b7b55f2-7086-0165-1758-ab32bf72e3cf/697691884103.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "1119",
+                        "name": "Urbano latino",
+                        "url": "https://itunes.apple.com/us/genre/id1119"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "12",
+                        "name": "Latino",
+                        "url": "https://itunes.apple.com/us/genre/id12"
+                    }
+                ],
+                "url": "https://itunes.apple.com/us/album/odisea/1269285897?app=music"
+            }
+        ]
+    }
+}
+

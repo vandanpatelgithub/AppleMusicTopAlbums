@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		07AA46A12148D90200DFC3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A02148D90200DFC3DA /* AppDelegate.swift */; };
-		07AA46A32148D90200DFC3DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A22148D90200DFC3DA /* ViewController.swift */; };
-		07AA46A62148D90200DFC3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46A42148D90200DFC3DA /* Main.storyboard */; };
 		07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A72148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld */; };
 		07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AA2148D90300DFC3DA /* Assets.xcassets */; };
 		07AA46AE2148D90300DFC3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AC2148D90300DFC3DA /* LaunchScreen.storyboard */; };
 		07AA46B92148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46B82148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift */; };
+		07AA46C92148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */; };
+		07AA46CB2148DA7C00DFC3DA /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C52148DA7C00DFC3DA /* Album+CoreDataClass.swift */; };
+		07AA46CD2148DA7C00DFC3DA /* Feed+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C72148DA7C00DFC3DA /* Feed+CoreDataClass.swift */; };
+		07AA46D02148DF4100DFC3DA /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */; };
+		07AA46D32148DF9000DFC3DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46D22148DF9000DFC3DA /* MainViewController.swift */; };
+		07AA46D92148E0D100DFC3DA /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46D82148E0D100DFC3DA /* HelperFunctions.swift */; };
+		07AA46DA2148E35B00DFC3DA /* StubbedTopAlbums.json in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +34,6 @@
 /* Begin PBXFileReference section */
 		07AA469D2148D90200DFC3DA /* AppleMusicTopAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicTopAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AA46A02148D90200DFC3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07AA46A22148D90200DFC3DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07AA46A52148D90200DFC3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07AA46A82148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppleMusicTopAlbums.xcdatamodel; sourceTree = "<group>"; };
 		07AA46AA2148D90300DFC3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07AA46AD2148D90300DFC3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,13 @@
 		07AA46B42148D90300DFC3DA /* AppleMusicTopAlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleMusicTopAlbumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AA46B82148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicTopAlbumsTests.swift; sourceTree = "<group>"; };
 		07AA46BA2148D90300DFC3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedContainer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		07AA46C52148DA7C00DFC3DA /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
+		07AA46C72148DA7C00DFC3DA /* Feed+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+CoreDataClass.swift"; sourceTree = "<group>"; };
+		07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		07AA46D22148DF9000DFC3DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StubbedTopAlbums.json; sourceTree = "<group>"; };
+		07AA46D82148E0D100DFC3DA /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +89,13 @@
 		07AA469F2148D90200DFC3DA /* AppleMusicTopAlbums */ = {
 			isa = PBXGroup;
 			children = (
+				07AA46D72148E0AC00DFC3DA /* Helper Functions */,
+				07AA46D12148DF7F00DFC3DA /* Controllers */,
+				07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */,
+				07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */,
+				07AA46C52148DA7C00DFC3DA /* Album+CoreDataClass.swift */,
+				07AA46C72148DA7C00DFC3DA /* Feed+CoreDataClass.swift */,
 				07AA46A02148D90200DFC3DA /* AppDelegate.swift */,
-				07AA46A22148D90200DFC3DA /* ViewController.swift */,
-				07AA46A42148D90200DFC3DA /* Main.storyboard */,
 				07AA46AA2148D90300DFC3DA /* Assets.xcassets */,
 				07AA46AC2148D90300DFC3DA /* LaunchScreen.storyboard */,
 				07AA46AF2148D90300DFC3DA /* Info.plist */,
@@ -93,10 +107,35 @@
 		07AA46B72148D90300DFC3DA /* AppleMusicTopAlbumsTests */ = {
 			isa = PBXGroup;
 			children = (
+				07AA46D42148E06E00DFC3DA /* Stubs */,
 				07AA46B82148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift */,
 				07AA46BA2148D90300DFC3DA /* Info.plist */,
 			);
 			path = AppleMusicTopAlbumsTests;
+			sourceTree = "<group>";
+		};
+		07AA46D12148DF7F00DFC3DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07AA46D22148DF9000DFC3DA /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		07AA46D42148E06E00DFC3DA /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		07AA46D72148E0AC00DFC3DA /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				07AA46D82148E0D100DFC3DA /* HelperFunctions.swift */,
+			);
+			path = "Helper Functions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AA46DA2148E35B00DFC3DA /* StubbedTopAlbums.json in Resources */,
 				07AA46AE2148D90300DFC3DA /* LaunchScreen.storyboard in Resources */,
 				07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */,
-				07AA46A62148D90200DFC3DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */,
-				07AA46A32148D90200DFC3DA /* ViewController.swift in Sources */,
+				07AA46D92148E0D100DFC3DA /* HelperFunctions.swift in Sources */,
+				07AA46C92148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift in Sources */,
+				07AA46CD2148DA7C00DFC3DA /* Feed+CoreDataClass.swift in Sources */,
 				07AA46A12148D90200DFC3DA /* AppDelegate.swift in Sources */,
+				07AA46CB2148DA7C00DFC3DA /* Album+CoreDataClass.swift in Sources */,
+				07AA46D02148DF4100DFC3DA /* PersistanceManager.swift in Sources */,
+				07AA46D32148DF9000DFC3DA /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +269,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		07AA46A42148D90200DFC3DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07AA46A52148D90200DFC3DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		07AA46AC2148D90300DFC3DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
