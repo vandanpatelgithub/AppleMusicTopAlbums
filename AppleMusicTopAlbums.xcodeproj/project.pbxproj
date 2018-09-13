@@ -23,6 +23,18 @@
 		07BFDE932149E6740057069A /* CorruptResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE922149E6740057069A /* CorruptResponse.json */; };
 		07BFDE96214A21CB0057069A /* StubbedEmptyResultsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE94214A20B80057069A /* StubbedEmptyResultsResponse.json */; };
 		07BFDE99214A22880057069A /* EmptyFeedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE97214A22580057069A /* EmptyFeedResponse.json */; };
+		07BFDEA5214A27AC0057069A /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDE9F214A27AB0057069A /* HTTPTask.swift */; };
+		07BFDEA6214A27AC0057069A /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEA0214A27AB0057069A /* NetworkRouter.swift */; };
+		07BFDEA7214A27AC0057069A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEA1214A27AB0057069A /* Router.swift */; };
+		07BFDEA8214A27AC0057069A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEA2214A27AB0057069A /* Errors.swift */; };
+		07BFDEA9214A27AC0057069A /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEA3214A27AC0057069A /* EndPointType.swift */; };
+		07BFDEAA214A27AC0057069A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEA4214A27AC0057069A /* HTTPMethod.swift */; };
+		07BFDEAE214A27E10057069A /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEAB214A27E10057069A /* ParameterEncoding.swift */; };
+		07BFDEAF214A27E10057069A /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEAC214A27E10057069A /* JSONParameterEncoder.swift */; };
+		07BFDEB0214A27E10057069A /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEAD214A27E10057069A /* URLParameterEncoder.swift */; };
+		07BFDEB2214A28190057069A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEB1214A28190057069A /* NetworkManager.swift */; };
+		07BFDEB4214A29F40057069A /* FeedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEB3214A29F40057069A /* FeedEndpoint.swift */; };
+		07BFDEB6214A304F0057069A /* FeedEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEB5214A304F0057069A /* FeedEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +68,18 @@
 		07BFDE922149E6740057069A /* CorruptResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CorruptResponse.json; sourceTree = "<group>"; };
 		07BFDE94214A20B80057069A /* StubbedEmptyResultsResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StubbedEmptyResultsResponse.json; sourceTree = "<group>"; };
 		07BFDE97214A22580057069A /* EmptyFeedResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyFeedResponse.json; sourceTree = "<group>"; };
+		07BFDE9F214A27AB0057069A /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		07BFDEA0214A27AB0057069A /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		07BFDEA1214A27AB0057069A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		07BFDEA2214A27AB0057069A /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		07BFDEA3214A27AC0057069A /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		07BFDEA4214A27AC0057069A /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		07BFDEAB214A27E10057069A /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		07BFDEAC214A27E10057069A /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		07BFDEAD214A27E10057069A /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		07BFDEB1214A28190057069A /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		07BFDEB3214A29F40057069A /* FeedEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpoint.swift; sourceTree = "<group>"; };
+		07BFDEB5214A304F0057069A /* FeedEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +121,7 @@
 		07AA469F2148D90200DFC3DA /* AppleMusicTopAlbums */ = {
 			isa = PBXGroup;
 			children = (
+				07BFDE9A214A27340057069A /* Networking */,
 				07AA46D72148E0AC00DFC3DA /* Helper Functions */,
 				07AA46D12148DF7F00DFC3DA /* Controllers */,
 				07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */,
@@ -117,6 +142,7 @@
 			children = (
 				07AA46D42148E06E00DFC3DA /* Stubs */,
 				07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */,
+				07BFDEB5214A304F0057069A /* FeedEndpointTests.swift */,
 				07AA46BA2148D90300DFC3DA /* Info.plist */,
 			);
 			path = AppleMusicTopAlbumsTests;
@@ -148,6 +174,56 @@
 				07AA46D82148E0D100DFC3DA /* HelperFunctions.swift */,
 			);
 			path = "Helper Functions";
+			sourceTree = "<group>";
+		};
+		07BFDE9A214A27340057069A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				07BFDE9E214A27620057069A /* Encoding */,
+				07BFDE9D214A27580057069A /* Service */,
+				07BFDE9C214A27520057069A /* Manager */,
+				07BFDE9B214A27460057069A /* Endpoint */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		07BFDE9B214A27460057069A /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				07BFDEB3214A29F40057069A /* FeedEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		07BFDE9C214A27520057069A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				07BFDEB1214A28190057069A /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		07BFDE9D214A27580057069A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				07BFDEA3214A27AC0057069A /* EndPointType.swift */,
+				07BFDEA2214A27AB0057069A /* Errors.swift */,
+				07BFDEA4214A27AC0057069A /* HTTPMethod.swift */,
+				07BFDE9F214A27AB0057069A /* HTTPTask.swift */,
+				07BFDEA0214A27AB0057069A /* NetworkRouter.swift */,
+				07BFDEA1214A27AB0057069A /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		07BFDE9E214A27620057069A /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				07BFDEAC214A27E10057069A /* JSONParameterEncoder.swift */,
+				07BFDEAB214A27E10057069A /* ParameterEncoding.swift */,
+				07BFDEAD214A27E10057069A /* URLParameterEncoder.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,12 +331,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BFDEB2214A28190057069A /* NetworkManager.swift in Sources */,
+				07BFDEAF214A27E10057069A /* JSONParameterEncoder.swift in Sources */,
+				07BFDEA7214A27AC0057069A /* Router.swift in Sources */,
 				07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */,
+				07BFDEB4214A29F40057069A /* FeedEndpoint.swift in Sources */,
+				07BFDEAA214A27AC0057069A /* HTTPMethod.swift in Sources */,
+				07BFDEA9214A27AC0057069A /* EndPointType.swift in Sources */,
 				07AA46D92148E0D100DFC3DA /* HelperFunctions.swift in Sources */,
 				07AA46C92148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift in Sources */,
+				07BFDEA8214A27AC0057069A /* Errors.swift in Sources */,
+				07BFDEA5214A27AC0057069A /* HTTPTask.swift in Sources */,
 				07AA46CD2148DA7C00DFC3DA /* Feed+CoreDataClass.swift in Sources */,
 				07AA46A12148D90200DFC3DA /* AppDelegate.swift in Sources */,
 				07AA46CB2148DA7C00DFC3DA /* Album+CoreDataClass.swift in Sources */,
+				07BFDEB0214A27E10057069A /* URLParameterEncoder.swift in Sources */,
+				07BFDEA6214A27AC0057069A /* NetworkRouter.swift in Sources */,
+				07BFDEAE214A27E10057069A /* ParameterEncoding.swift in Sources */,
 				07AA46D02148DF4100DFC3DA /* PersistanceManager.swift in Sources */,
 				07AA46D32148DF9000DFC3DA /* MainViewController.swift in Sources */,
 			);
@@ -270,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BFDEB6214A304F0057069A /* FeedEndpointTests.swift in Sources */,
 				07BFDE8E2149DC840057069A /* DecodingJSONResponseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
