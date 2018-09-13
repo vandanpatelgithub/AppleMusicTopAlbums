@@ -50,7 +50,8 @@ public class Album: NSManagedObject, Codable {
     public required convenience init(from decoder: Decoder) throws {
         guard let contextUserInfoKey = CodingUserInfoKey.context,
             let managedObjectContext = decoder.userInfo[contextUserInfoKey] as? NSManagedObjectContext,
-            let entity = NSEntityDescription.entity(forEntityName: "Album", in: managedObjectContext) else {  fatalError("Failed to decode Subject!")  }
+            let entity = NSEntityDescription.entity(forEntityName: "Album", in: managedObjectContext)
+            else {  fatalError("Failed to decode Subject!")  }
         self.init(entity: entity, insertInto: managedObjectContext)
 
         let container = try decoder.container(keyedBy: CodingKeys.self)

@@ -16,7 +16,7 @@ public class FeedContainer: NSManagedObject, Codable {
         return NSFetchRequest<FeedContainer>(entityName: "FeedContainer")
     }
 
-    @NSManaged public var feed: Feed
+    @NSManaged public var feed: Feed?
 
     enum CodingKeys: String, CodingKey {
         case feed
@@ -30,11 +30,11 @@ public class FeedContainer: NSManagedObject, Codable {
     public required convenience init(from decoder: Decoder) throws {
         guard let contextUserInfoKey = CodingUserInfoKey.context,
             let managedObjectContext = decoder.userInfo[contextUserInfoKey] as? NSManagedObjectContext,
-            let entity = NSEntityDescription.entity(forEntityName: "FeedContainer", in: managedObjectContext) else {  fatalError("Failed to decode Subject!")  }
+            let entity = NSEntityDescription.entity(forEntityName: "FeedContainer", in: managedObjectContext)
+            else {  fatalError("Failed to decode Subject!")  }
         self.init(entity: entity, insertInto: managedObjectContext)
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        feed = try container.decodeIfPresent(Feed.self, forKey: .feed) ?? Feed()
-
+        feed = try container.decodeIfPresent(Feed.self, forKey: .feed)
     }
 }
 

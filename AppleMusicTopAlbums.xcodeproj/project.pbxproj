@@ -11,7 +11,6 @@
 		07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A72148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld */; };
 		07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AA2148D90300DFC3DA /* Assets.xcassets */; };
 		07AA46AE2148D90300DFC3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AC2148D90300DFC3DA /* LaunchScreen.storyboard */; };
-		07AA46B92148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46B82148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift */; };
 		07AA46C92148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */; };
 		07AA46CB2148DA7C00DFC3DA /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C52148DA7C00DFC3DA /* Album+CoreDataClass.swift */; };
 		07AA46CD2148DA7C00DFC3DA /* Feed+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C72148DA7C00DFC3DA /* Feed+CoreDataClass.swift */; };
@@ -19,6 +18,9 @@
 		07AA46D32148DF9000DFC3DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46D22148DF9000DFC3DA /* MainViewController.swift */; };
 		07AA46D92148E0D100DFC3DA /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46D82148E0D100DFC3DA /* HelperFunctions.swift */; };
 		07AA46DA2148E35B00DFC3DA /* StubbedTopAlbums.json in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */; };
+		07BFDE8E2149DC840057069A /* DecodingJSONResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */; };
+		07BFDE912149E2610057069A /* EmptyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE8F2149DF730057069A /* EmptyResponse.json */; };
+		07BFDE932149E6740057069A /* CorruptResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE922149E6740057069A /* CorruptResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		07AA46AD2148D90300DFC3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07AA46AF2148D90300DFC3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AA46B42148D90300DFC3DA /* AppleMusicTopAlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleMusicTopAlbumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07AA46B82148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicTopAlbumsTests.swift; sourceTree = "<group>"; };
 		07AA46BA2148D90300DFC3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedContainer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		07AA46C52148DA7C00DFC3DA /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		07AA46D22148DF9000DFC3DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StubbedTopAlbums.json; sourceTree = "<group>"; };
 		07AA46D82148E0D100DFC3DA /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingJSONResponseTests.swift; sourceTree = "<group>"; };
+		07BFDE8F2149DF730057069A /* EmptyResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyResponse.json; sourceTree = "<group>"; };
+		07BFDE922149E6740057069A /* CorruptResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CorruptResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				07AA46D42148E06E00DFC3DA /* Stubs */,
-				07AA46B82148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift */,
+				07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */,
 				07AA46BA2148D90300DFC3DA /* Info.plist */,
 			);
 			path = AppleMusicTopAlbumsTests;
@@ -126,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */,
+				07BFDE8F2149DF730057069A /* EmptyResponse.json */,
+				07BFDE922149E6740057069A /* CorruptResponse.json */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BFDE912149E2610057069A /* EmptyResponse.json in Resources */,
 				07AA46DA2148E35B00DFC3DA /* StubbedTopAlbums.json in Resources */,
 				07AA46AE2148D90300DFC3DA /* LaunchScreen.storyboard in Resources */,
 				07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */,
@@ -229,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BFDE932149E6740057069A /* CorruptResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07AA46B92148D90300DFC3DA /* AppleMusicTopAlbumsTests.swift in Sources */,
+				07BFDE8E2149DC840057069A /* DecodingJSONResponseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
