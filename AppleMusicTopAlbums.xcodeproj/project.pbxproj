@@ -13,11 +13,11 @@
 		07AA46AE2148D90300DFC3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AC2148D90300DFC3DA /* LaunchScreen.storyboard */; };
 		07AA46C92148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */; };
 		07AA46CB2148DA7C00DFC3DA /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C52148DA7C00DFC3DA /* Album+CoreDataClass.swift */; };
-		07AA46CD2148DA7C00DFC3DA /* Feed+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46C72148DA7C00DFC3DA /* Feed+CoreDataClass.swift */; };
 		07AA46D02148DF4100DFC3DA /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */; };
 		07AA46D32148DF9000DFC3DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46D22148DF9000DFC3DA /* MainViewController.swift */; };
 		07AA46D92148E0D100DFC3DA /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46D82148E0D100DFC3DA /* HelperFunctions.swift */; };
 		07AA46DA2148E35B00DFC3DA /* StubbedTopAlbums.json in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */; };
+		07ADFF32214AD72600F2E21E /* Feed+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADFF30214AD72600F2E21E /* Feed+CoreDataClass.swift */; };
 		07BFDE8E2149DC840057069A /* DecodingJSONResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */; };
 		07BFDE912149E2610057069A /* EmptyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE8F2149DF730057069A /* EmptyResponse.json */; };
 		07BFDE932149E6740057069A /* CorruptResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE922149E6740057069A /* CorruptResponse.json */; };
@@ -58,11 +58,11 @@
 		07AA46BA2148D90300DFC3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedContainer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		07AA46C52148DA7C00DFC3DA /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
-		07AA46C72148DA7C00DFC3DA /* Feed+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+CoreDataClass.swift"; sourceTree = "<group>"; };
 		07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 		07AA46D22148DF9000DFC3DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StubbedTopAlbums.json; sourceTree = "<group>"; };
 		07AA46D82148E0D100DFC3DA /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		07ADFF30214AD72600F2E21E /* Feed+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+CoreDataClass.swift"; sourceTree = "<group>"; };
 		07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingJSONResponseTests.swift; sourceTree = "<group>"; };
 		07BFDE8F2149DF730057069A /* EmptyResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyResponse.json; sourceTree = "<group>"; };
 		07BFDE922149E6740057069A /* CorruptResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CorruptResponse.json; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 				07AA46D12148DF7F00DFC3DA /* Controllers */,
 				07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */,
 				07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */,
+				07ADFF30214AD72600F2E21E /* Feed+CoreDataClass.swift */,
 				07AA46C52148DA7C00DFC3DA /* Album+CoreDataClass.swift */,
-				07AA46C72148DA7C00DFC3DA /* Feed+CoreDataClass.swift */,
 				07AA46A02148D90200DFC3DA /* AppDelegate.swift */,
 				07AA46AA2148D90300DFC3DA /* Assets.xcassets */,
 				07AA46AC2148D90300DFC3DA /* LaunchScreen.storyboard */,
@@ -337,12 +337,12 @@
 				07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */,
 				07BFDEB4214A29F40057069A /* FeedEndpoint.swift in Sources */,
 				07BFDEAA214A27AC0057069A /* HTTPMethod.swift in Sources */,
+				07ADFF32214AD72600F2E21E /* Feed+CoreDataClass.swift in Sources */,
 				07BFDEA9214A27AC0057069A /* EndPointType.swift in Sources */,
 				07AA46D92148E0D100DFC3DA /* HelperFunctions.swift in Sources */,
 				07AA46C92148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift in Sources */,
 				07BFDEA8214A27AC0057069A /* Errors.swift in Sources */,
 				07BFDEA5214A27AC0057069A /* HTTPTask.swift in Sources */,
-				07AA46CD2148DA7C00DFC3DA /* Feed+CoreDataClass.swift in Sources */,
 				07AA46A12148D90200DFC3DA /* AppDelegate.swift in Sources */,
 				07AA46CB2148DA7C00DFC3DA /* Album+CoreDataClass.swift in Sources */,
 				07BFDEB0214A27E10057069A /* URLParameterEncoder.swift in Sources */,

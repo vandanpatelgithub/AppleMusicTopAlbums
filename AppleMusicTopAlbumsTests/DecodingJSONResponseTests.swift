@@ -31,6 +31,11 @@ class DecodingJSONResponseTests: XCTestCase {
                 return
             }
             XCTAssertEqual(feed.title, "Top Albums")
+            guard let firstAlbum = feed.albums.firstObject as? Album else {
+                XCTFail("Getting first album failed")
+                return
+            }
+            XCTAssertEqual(firstAlbum.artistName, "Ozuna")
         } catch {
             XCTFail("Decoding Failed")
         }

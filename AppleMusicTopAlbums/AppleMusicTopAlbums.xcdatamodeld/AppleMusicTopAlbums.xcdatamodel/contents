@@ -12,7 +12,7 @@
     </entity>
     <entity name="Feed" representedClassName=".Feed" syncable="YES">
         <attribute name="title" attributeType="String" syncable="YES"/>
-        <relationship name="albums" toMany="YES" deletionRule="Nullify" destinationEntity="Album" inverseName="feed" inverseEntity="Album" syncable="YES"/>
+        <relationship name="albums" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Album" inverseName="feed" inverseEntity="Album" syncable="YES"/>
         <relationship name="feedContainer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FeedContainer" inverseName="feed" inverseEntity="FeedContainer" syncable="YES"/>
     </entity>
     <entity name="FeedContainer" representedClassName=".FeedContainer" syncable="YES">

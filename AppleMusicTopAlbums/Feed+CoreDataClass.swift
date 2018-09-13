@@ -2,7 +2,7 @@
 //  Feed+CoreDataClass.swift
 //  AppleMusicTopAlbums
 //
-//  Created by Patel, Vandan (ETW - FLEX) on 9/11/18.
+//  Created by Patel, Vandan (ETW - FLEX) on 9/13/18.
 //  Copyright © 2018 Patel, Vandan (ETW - FLEX). All rights reserved.
 //
 //
@@ -18,7 +18,7 @@ public class Feed: NSManagedObject, Codable {
     }
 
     @NSManaged public var title: String
-    @NSManaged public var albums: Set<Album>
+    @NSManaged public var albums: NSOrderedSet
     @NSManaged public var feedContainer: FeedContainer?
 
     enum CodingKeys: String, CodingKey {
@@ -30,7 +30,7 @@ public class Feed: NSManagedObject, Codable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(title, forKey: .title)
-        try container.encode(albums, forKey: .albums)
+        try container.encode(albums.array as? [Album] ?? [], forKey: .albums)
     }
 
     public required convenience init(from decoder: Decoder) throws {
@@ -41,6 +41,8 @@ public class Feed: NSManagedObject, Codable {
 
         let container = try decoder.container(keyedBy: CodingKeys.self)
         title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
-        albums = try container.decodeIfPresent(Set<Album>.self, forKey: .albums) ?? []
+        let albumsArray = try container.decodeIfPresent([Album].self, forKey: .albums) ?? []
+        albums = NSOrderedSet(array: albumsArray)
     }
+
 }
