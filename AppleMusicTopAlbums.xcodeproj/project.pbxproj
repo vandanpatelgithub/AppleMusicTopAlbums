@@ -21,6 +21,8 @@
 		07BFDE8E2149DC840057069A /* DecodingJSONResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */; };
 		07BFDE912149E2610057069A /* EmptyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE8F2149DF730057069A /* EmptyResponse.json */; };
 		07BFDE932149E6740057069A /* CorruptResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE922149E6740057069A /* CorruptResponse.json */; };
+		07BFDE96214A21CB0057069A /* StubbedEmptyResultsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE94214A20B80057069A /* StubbedEmptyResultsResponse.json */; };
+		07BFDE99214A22880057069A /* EmptyFeedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07BFDE97214A22580057069A /* EmptyFeedResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingJSONResponseTests.swift; sourceTree = "<group>"; };
 		07BFDE8F2149DF730057069A /* EmptyResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyResponse.json; sourceTree = "<group>"; };
 		07BFDE922149E6740057069A /* CorruptResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CorruptResponse.json; sourceTree = "<group>"; };
+		07BFDE94214A20B80057069A /* StubbedEmptyResultsResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StubbedEmptyResultsResponse.json; sourceTree = "<group>"; };
+		07BFDE97214A22580057069A /* EmptyFeedResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyFeedResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				07AA46D52148E08B00DFC3DA /* StubbedTopAlbums.json */,
 				07BFDE8F2149DF730057069A /* EmptyResponse.json */,
 				07BFDE922149E6740057069A /* CorruptResponse.json */,
+				07BFDE94214A20B80057069A /* StubbedEmptyResultsResponse.json */,
+				07BFDE97214A22580057069A /* EmptyFeedResponse.json */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -227,6 +233,8 @@
 			files = (
 				07BFDE912149E2610057069A /* EmptyResponse.json in Resources */,
 				07AA46DA2148E35B00DFC3DA /* StubbedTopAlbums.json in Resources */,
+				07BFDE99214A22880057069A /* EmptyFeedResponse.json in Resources */,
+				07BFDE96214A21CB0057069A /* StubbedEmptyResultsResponse.json in Resources */,
 				07AA46AE2148D90300DFC3DA /* LaunchScreen.storyboard in Resources */,
 				07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */,
 			);

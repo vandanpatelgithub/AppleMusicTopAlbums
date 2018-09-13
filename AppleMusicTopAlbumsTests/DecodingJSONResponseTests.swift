@@ -61,4 +61,45 @@ class DecodingJSONResponseTests: XCTestCase {
         }
         XCTFail("Test shouldn't succeed")
     }
+
+    func testEmptyResultsJSONResponse() {
+        guard
+            let data = getJSONData(forResource: "StubbedEmptyResultsResponse", ofType: "json"),
+            let context = CodingUserInfoKey.context else {
+                XCTFail("Getting JSONData or Context Failed")
+                return
+        }
+
+        let decoder = JSONDecoder()
+        decoder.userInfo[context] = persistanceContainer.viewContext
+        decoder.dateDecodingStrategy = .formatted(basicDateFormatter)
+        do {
+            let feedContainer = try decoder.decode(FeedContainer.self, from: data)
+            XCTAssertEqual(feedContainer.feed?.albums.count, 0)
+            XCTAssertEqual(feedContainer.feed?.title, "Top Albums")
+
+        } catch let error {
+            XCTAssertNotNil(error)
+        }
+    }
+
+    func testEmptyFeedJSONResponse() {
+        guard
+            let data = getJSONData(forResource: "EmptyFeedResponse", ofType: "json"),
+            let context = CodingUserInfoKey.context else {
+                XCTFail("Getting JSONData or Context Failed")
+                return
+        }
+        let decoder = JSONDecoder()
+        decoder.userInfo[context] = persistanceContainer.viewContext
+        decoder.dateDecodingStrategy = .formatted(basicDateFormatter)
+        do {
+            let feedContainer = try decoder.decode(FeedContainer.self, from: data)
+            XCTAssertNotNil(feedContainer.feed)
+            XCTAssertEqual(feedContainer.feed?.title, "")
+            XCTAssertEqual(feedContainer.feed?.albums.count, 0)
+        } catch let error {
+            XCTAssertNotNil(error)
+        }
+    }
 }

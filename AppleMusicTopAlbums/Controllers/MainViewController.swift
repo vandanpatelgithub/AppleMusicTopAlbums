@@ -25,23 +25,5 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .gray
-
-
-        guard
-            let data = getJSONData(forResource: "StubbedTopAlbums", ofType: "json"),
-            let context = CodingUserInfoKey.context else {
-            fatalError()
-        }
-
-        let decoder = JSONDecoder()
-        decoder.userInfo[context] = persistanceContainer.viewContext
-        decoder.dateDecodingStrategy = .formatted(basicDateFormatter)
-        do {
-            let feed = try decoder.decode(FeedContainer.self, from: data)
-            guard let firstAlbum = feed.feed!.albums.first else { return }
-            print(">>>>>> First Album : \(firstAlbum.albumName) <<<<<<")
-        } catch let error {
-            print("Decoding Failed with error : \(error.localizedDescription)")
-        }
     }
 }

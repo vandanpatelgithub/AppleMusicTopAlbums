@@ -1,0 +1,26 @@
+
+{
+    "feed": {
+        "title": "Top Albums",
+        "id": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/50/non-explicit.json",
+        "author": {
+            "name": "iTunes Store",
+            "uri": "http://wwww.apple.com/us/itunes/"
+        },
+        "links": [
+            {
+                "self": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/50/non-explicit.json"
+            },
+            {
+                "alternate": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?genreId=34&popId=82&app=music"
+            }
+        ],
+        "copyright": "Copyright © 2018 Apple Inc. Все права защищены.",
+        "country": "us",
+        "icon": "http://itunes.apple.com/favicon.ico",
+        "updated": "2018-09-09T02:00:15.000-07:00",
+        "results": [
+        ]
+    }
+}
+
