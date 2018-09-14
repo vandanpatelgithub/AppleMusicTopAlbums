@@ -9,7 +9,7 @@
 import Foundation
 
 public enum FeedAPI {
-    case getTopAlbums()
+    case topAlbums
 }
 
 extension FeedAPI: EndPointType {
@@ -22,28 +22,28 @@ extension FeedAPI: EndPointType {
 
     var path: String {
         switch self {
-        case .getTopAlbums:
+        case .topAlbums:
             return "us/apple-music/top-albums/all/50/non-explicit.json"
         }
     }
 
     var httpMethod: HTTPMethod {
         switch self {
-        case .getTopAlbums:
+        case .topAlbums:
             return .get
         }
     }
 
     var task: HTTPTask {
         switch self {
-        case .getTopAlbums:
+        case .topAlbums:
             return .request
         }
     }
 
     var headers: HTTPHeaders? {
         switch self {
-        case .getTopAlbums:
+        case .topAlbums:
             return nil
         }
     }

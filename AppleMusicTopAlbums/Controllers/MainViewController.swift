@@ -9,12 +9,16 @@
 import UIKit
 import CoreData
 
-class MainViewController: UIViewController {
+class MainViewController: UITableViewController {
 
     private let persistanceContainer: NSPersistentContainer
+    private let networkManager: NetworkManager
+    private var albums = [Album]()
+    private let cellID = "albumCell"
 
-    init(persistanceContainer: NSPersistentContainer) {
+    init(persistanceContainer: NSPersistentContainer, networkManager: NetworkManager) {
         self.persistanceContainer = persistanceContainer
+        self.networkManager = networkManager
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -24,6 +28,32 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .white
+        navigationItem.title = "Top Albums"
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        networkManager.getTopAlbums { [weak self] (albums, error) in
+            guard let strongSelf = self else { return }
+            if let error = error { print(error) }
+            if let albums = albums {
+                strongSelf.albums = albums
+                DispatchQueue.main.async {
+                    strongSelf.tableView.reloadData()
+                }
+            }
+        }
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return albums.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        let album = albums[indexPath.row]
+        cell.textLabel?.text = album.albumName
+        return cell
     }
 }

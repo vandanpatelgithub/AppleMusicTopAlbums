@@ -11,7 +11,7 @@ import XCTest
 
 class FeedEndpointTests: XCTestCase {
     func testGetAlbumsEndpoint() {
-        let endpoint = FeedAPI.getTopAlbums()
+        let endpoint = FeedAPI.topAlbums
         XCTAssertEqual(endpoint.baseURL.absoluteString, "https://rss.itunes.apple.com/api/v1/")
         XCTAssertEqual(endpoint.path, "us/apple-music/top-albums/all/50/non-explicit.json")
         XCTAssertEqual(endpoint.httpMethod, .get)
