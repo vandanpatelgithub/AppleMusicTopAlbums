@@ -16,6 +16,7 @@ class MainViewController: UITableViewController {
     private var albums = [Album]()
     private var feed: Feed?
     private let cellID = "albumCell"
+    private lazy var loadingVC = LoadingViewController()
 
     init(persistanceContainer: NSPersistentContainer, networkManager: NetworkManager) {
         self.persistanceContainer = persistanceContainer
@@ -34,12 +35,11 @@ class MainViewController: UITableViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        let loadingVC = LoadingViewController()
         add(loadingVC)
 
         networkManager.getTopAlbums { [weak self] (feed, error) in
-            DispatchQueue.main.async { loadingVC.remove() }
             guard let strongSelf = self else { return }
+            DispatchQueue.main.async { strongSelf.loadingVC.remove() }
             if let error = error { print(error) }
             if let feed = feed {
                 guard let albumsArray = feed.albums.array as? [Album] else { return }
@@ -61,5 +61,9 @@ class MainViewController: UITableViewController {
         let album = albums[indexPath.row]
         cell.textLabel?.text = album.albumName
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Alert.showAlert(on: self, with: "Vandan", and: "Patel")
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0738007F214C2444003096F9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738007E214C2444003096F9 /* LoadingViewController.swift */; };
+		0765FCAB214C6650006D3AFB /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765FCAA214C6650006D3AFB /* AlertViewController.swift */; };
 		07AA46A12148D90200DFC3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A02148D90200DFC3DA /* AppDelegate.swift */; };
 		07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A72148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld */; };
 		07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AA2148D90300DFC3DA /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		0738007E214C2444003096F9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		0765FCAA214C6650006D3AFB /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		07AA469D2148D90200DFC3DA /* AppleMusicTopAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicTopAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AA46A02148D90200DFC3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AA46A82148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppleMusicTopAlbums.xcdatamodel; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				07AA46D22148DF9000DFC3DA /* MainViewController.swift */,
 				0738007E214C2444003096F9 /* LoadingViewController.swift */,
+				0765FCAA214C6650006D3AFB /* AlertViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07BFDEB2214A28190057069A /* NetworkManager.swift in Sources */,
+				0765FCAB214C6650006D3AFB /* AlertViewController.swift in Sources */,
 				07BFDEAF214A27E10057069A /* JSONParameterEncoder.swift in Sources */,
 				07BFDEA7214A27AC0057069A /* Router.swift in Sources */,
 				07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */,
