@@ -14,6 +14,7 @@ class MainViewController: UITableViewController {
     private let persistanceContainer: NSPersistentContainer
     private let networkManager: NetworkManager
     private var albums = [Album]()
+    private var feed: Feed?
     private let cellID = "albumCell"
 
     init(persistanceContainer: NSPersistentContainer, networkManager: NetworkManager) {
@@ -34,12 +35,14 @@ class MainViewController: UITableViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        networkManager.getTopAlbums { [weak self] (albums, error) in
+        networkManager.getTopAlbums { [weak self] (feed, error) in
             guard let strongSelf = self else { return }
             if let error = error { print(error) }
-            if let albums = albums {
-                strongSelf.albums = albums
+            if let feed = feed {
+                guard let albumsArray = feed.albums.array as? [Album] else { return }
+                strongSelf.albums = albumsArray
                 DispatchQueue.main.async {
+                    strongSelf.navigationItem.title = feed.title
                     strongSelf.tableView.reloadData()
                 }
             }

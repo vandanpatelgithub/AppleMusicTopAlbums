@@ -21,7 +21,7 @@ struct NetworkManager {
         self.decoder = decoder
     }
 
-    func getTopAlbums(completion: @escaping (_ albums: [Album]?, _ error: String?) -> ()) {
+    func getTopAlbums(completion: @escaping (_ feed: Feed?, _ error: String?) -> ()) {
         router.request(.topAlbums) { (data, response, error) in
             if error != nil {
                 completion(nil, "Please check your network connection.")
@@ -37,11 +37,11 @@ struct NetworkManager {
                     }
                     do {
                         let feedContainer = try self.decoder.decode(FeedContainer.self, from: responseData)
-                        guard let albums = feedContainer.feed?.albums.array as? [Album] else {
-                            completion(nil, NetworkResponse.unableToConvertSetToArray.rawValue)
+                        guard let feed = feedContainer.feed else {
+                            completion(nil, NetworkResponse.unableToCaptureFeed.rawValue)
                             return
                         }
-                        completion(albums, nil)
+                        completion(feed, nil)
                     } catch {
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }
@@ -71,7 +71,7 @@ enum NetworkResponse: String {
     case failed                     = "Network request failed"
     case noData                     = "Response returned with no data to decode"
     case unableToDecode             = "We could not decode the resopnse"
-    case unableToConvertSetToArray  = "We could not conver set to array"
+    case unableToCaptureFeed        = "We could not conver set to array"
 }
 
 enum Result<String> {
