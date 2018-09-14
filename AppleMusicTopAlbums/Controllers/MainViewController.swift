@@ -40,7 +40,7 @@ class MainViewController: UITableViewController {
         networkManager.getTopAlbums { [weak self] (feed, error) in
             guard let strongSelf = self else { return }
             DispatchQueue.main.async { strongSelf.loadingVC.remove() }
-            if let error = error { print(error) }
+            if let error = error { strongSelf.handleError(error) }
             if let feed = feed {
                 guard let albumsArray = feed.albums.array as? [Album] else { return }
                 strongSelf.albums = albumsArray
@@ -49,6 +49,12 @@ class MainViewController: UITableViewController {
                     strongSelf.tableView.reloadData()
                 }
             }
+        }
+    }
+
+    func handleError(_ error: String) {
+        DispatchQueue.main.async {
+            Alert.showAlert(on: self, with: "ERROR", and: error)
         }
     }
 
@@ -64,6 +70,5 @@ class MainViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Alert.showAlert(on: self, with: "Vandan", and: "Patel")
     }
 }
