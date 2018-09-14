@@ -29,13 +29,16 @@ class MainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         navigationItem.title = "Top Albums"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        let loadingVC = LoadingViewController()
+        add(loadingVC)
+
         networkManager.getTopAlbums { [weak self] (feed, error) in
+            DispatchQueue.main.async { loadingVC.remove() }
             guard let strongSelf = self else { return }
             if let error = error { print(error) }
             if let feed = feed {

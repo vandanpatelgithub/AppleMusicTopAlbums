@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0738007F214C2444003096F9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738007E214C2444003096F9 /* LoadingViewController.swift */; };
 		07AA46A12148D90200DFC3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A02148D90200DFC3DA /* AppDelegate.swift */; };
 		07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A72148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld */; };
 		07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AA2148D90300DFC3DA /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0738007E214C2444003096F9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		07AA469D2148D90200DFC3DA /* AppleMusicTopAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicTopAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AA46A02148D90200DFC3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AA46A82148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppleMusicTopAlbums.xcdatamodel; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				07AA46D22148DF9000DFC3DA /* MainViewController.swift */,
+				0738007E214C2444003096F9 /* LoadingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				07BFDEB4214A29F40057069A /* FeedEndpoint.swift in Sources */,
 				07BFDEAA214A27AC0057069A /* HTTPMethod.swift in Sources */,
 				07ADFF32214AD72600F2E21E /* Feed+CoreDataClass.swift in Sources */,
+				0738007F214C2444003096F9 /* LoadingViewController.swift in Sources */,
 				07BFDEA9214A27AC0057069A /* EndPointType.swift in Sources */,
 				07AA46D92148E0D100DFC3DA /* HelperFunctions.swift in Sources */,
 				07AA46C92148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift in Sources */,
