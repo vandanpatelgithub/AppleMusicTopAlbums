@@ -12,7 +12,7 @@ import CoreData
 class MainViewController: UITableViewController {
 
     private let networkManager: NetworkManager
-    private var albums = [Album]()
+    private var albums = [MainAlbumViewModel]()
     private var feed: Feed?
     private let cellID = "albumCell"
     private lazy var loadingVC = LoadingViewController()
@@ -30,7 +30,7 @@ class MainViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Top Albums"
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(AlbumCell.self, forCellReuseIdentifier: cellID)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -57,12 +57,8 @@ class MainViewController: UITableViewController {
         for album in albumsArray {
             imageDataDispatchGroup.enter()
             networkManager.getImageData(for: album.albumArtwork, completion: { [weak self] (data, error) in
-                guard let strongSelf = self else {
-                    return
-                }
-                if let error = error {
-                    strongSelf.handleError(error)
-                }
+                guard let strongSelf = self else { return }
+                if let error = error { strongSelf.handleError(error) }
                 if let data = data { album.albumImage = data }
                 strongSelf.imageDataDispatchGroup.leave()
             })
@@ -85,7 +81,7 @@ class MainViewController: UITableViewController {
             return
         }
         navigationItem.title = theFeed.title
-        albums = theAlbums
+        albums = theAlbums.map({ return MainAlbumViewModel(album: $0) })
         tableView.reloadData()
     }
 
@@ -94,12 +90,14 @@ class MainViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        let album = albums[indexPath.row]
-        cell.textLabel?.text = album.albumName
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? AlbumCell else {
+            return UITableViewCell()
+        }
+        cell.mainAlbumViewModel = albums[indexPath.row]
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 232.0
     }
 }

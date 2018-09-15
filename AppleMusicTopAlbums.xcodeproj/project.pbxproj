@@ -10,6 +10,8 @@
 		0738007F214C2444003096F9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738007E214C2444003096F9 /* LoadingViewController.swift */; };
 		0765FCAB214C6650006D3AFB /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765FCAA214C6650006D3AFB /* Alert.swift */; };
 		0765FCAE214C6E06006D3AFB /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765FCAC214C6E06006D3AFB /* Album+CoreDataClass.swift */; };
+		0765FCB6214D87A1006D3AFB /* MainAlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765FCB5214D87A1006D3AFB /* MainAlbumViewModel.swift */; };
+		0765FCB8214D8A4A006D3AFB /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765FCB7214D8A4A006D3AFB /* AlbumCell.swift */; };
 		07AA46A12148D90200DFC3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A02148D90200DFC3DA /* AppDelegate.swift */; };
 		07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A72148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld */; };
 		07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AA2148D90300DFC3DA /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		0738007E214C2444003096F9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		0765FCAA214C6650006D3AFB /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		0765FCAC214C6E06006D3AFB /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0765FCB5214D87A1006D3AFB /* MainAlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlbumViewModel.swift; sourceTree = "<group>"; };
+		0765FCB7214D8A4A006D3AFB /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		07AA469D2148D90200DFC3DA /* AppleMusicTopAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicTopAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AA46A02148D90200DFC3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AA46A82148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppleMusicTopAlbums.xcdatamodel; sourceTree = "<group>"; };
@@ -104,6 +108,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0765FCB0214D8429006D3AFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */,
+				07ADFF30214AD72600F2E21E /* Feed+CoreDataClass.swift */,
+				0765FCAC214C6E06006D3AFB /* Album+CoreDataClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0765FCB1214D8458006D3AFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0765FCB7214D8A4A006D3AFB /* AlbumCell.swift */,
+				07AA46AC2148D90300DFC3DA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0765FCB2214D8477006D3AFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AA46A02148D90200DFC3DA /* AppDelegate.swift */,
+				07AA46AA2148D90300DFC3DA /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0765FCB3214D84E0006D3AFB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0765FCB4214D8666006D3AFB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0765FCB5214D87A1006D3AFB /* MainAlbumViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		07AA46942148D90200DFC3DA = {
 			isa = PBXGroup;
 			children = (
@@ -125,17 +173,15 @@
 		07AA469F2148D90200DFC3DA /* AppleMusicTopAlbums */ = {
 			isa = PBXGroup;
 			children = (
+				0765FCB4214D8666006D3AFB /* ViewModel */,
+				07AA46AF2148D90300DFC3DA /* Info.plist */,
+				0765FCB2214D8477006D3AFB /* Supporting Files */,
+				0765FCB1214D8458006D3AFB /* View */,
 				07BFDE9A214A27340057069A /* Networking */,
 				07AA46D72148E0AC00DFC3DA /* Helper Functions */,
 				07AA46D12148DF7F00DFC3DA /* Controllers */,
-				07AA46CF2148DF4100DFC3DA /* PersistanceManager.swift */,
-				07AA46C32148DA7C00DFC3DA /* FeedContainer+CoreDataClass.swift */,
-				07ADFF30214AD72600F2E21E /* Feed+CoreDataClass.swift */,
-				0765FCAC214C6E06006D3AFB /* Album+CoreDataClass.swift */,
-				07AA46A02148D90200DFC3DA /* AppDelegate.swift */,
-				07AA46AA2148D90300DFC3DA /* Assets.xcassets */,
-				07AA46AC2148D90300DFC3DA /* LaunchScreen.storyboard */,
-				07AA46AF2148D90300DFC3DA /* Info.plist */,
+				0765FCB0214D8429006D3AFB /* Model */,
+				0765FCB3214D84E0006D3AFB /* Manager */,
 				07AA46A72148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld */,
 			);
 			path = AppleMusicTopAlbums;
@@ -340,10 +386,12 @@
 				07BFDEB2214A28190057069A /* NetworkManager.swift in Sources */,
 				0765FCAB214C6650006D3AFB /* Alert.swift in Sources */,
 				07BFDEAF214A27E10057069A /* JSONParameterEncoder.swift in Sources */,
+				0765FCB6214D87A1006D3AFB /* MainAlbumViewModel.swift in Sources */,
 				07BFDEA7214A27AC0057069A /* Router.swift in Sources */,
 				07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */,
 				0765FCAE214C6E06006D3AFB /* Album+CoreDataClass.swift in Sources */,
 				07BFDEB4214A29F40057069A /* FeedEndpoint.swift in Sources */,
+				0765FCB8214D8A4A006D3AFB /* AlbumCell.swift in Sources */,
 				07BFDEAA214A27AC0057069A /* HTTPMethod.swift in Sources */,
 				07ADFF32214AD72600F2E21E /* Feed+CoreDataClass.swift in Sources */,
 				0738007F214C2444003096F9 /* LoadingViewController.swift in Sources */,
