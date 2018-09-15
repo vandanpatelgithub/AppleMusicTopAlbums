@@ -39,10 +39,7 @@ class MainViewController: UITableViewController {
             guard let strongSelf = self else { return }
             if let error = error { strongSelf.handleError(error) }
             if let feed = feed {
-                guard let albumsArray = feed.albums.array as? [Album] else {
-                    return
-                }
-                strongSelf.albums = albumsArray
+                guard let albumsArray = feed.albums.array as? [Album] else { return }
                 strongSelf.loadImageData(albumsArray, feed)
             }
         }
@@ -77,14 +74,19 @@ class MainViewController: UITableViewController {
             strongSelf.navigationItem.title = feed.title
             PersistanceManager.shared.save()
             strongSelf.fetchFeedContainer()
-            strongSelf.tableView.reloadData()
         })
     }
 
     fileprivate func fetchFeedContainer() {
-        guard (try? PersistanceManager.shared.context.fetch(FeedContainer.fetchRequest()) as? [FeedContainer]) != nil else {
+        guard let feedContainer =
+            try? PersistanceManager.shared.context.fetch(FeedContainer.fetchRequest()).first as? FeedContainer,
+            let theFeed = feedContainer?.feed,
+            let theAlbums = theFeed.albums.array as? [Album] else {
             return
         }
+        navigationItem.title = theFeed.title
+        albums = theAlbums
+        tableView.reloadData()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
