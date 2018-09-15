@@ -2,7 +2,7 @@
 //  Album+CoreDataClass.swift
 //  AppleMusicTopAlbums
 //
-//  Created by Patel, Vandan (ETW - FLEX) on 9/11/18.
+//  Created by Patel, Vandan (ETW - FLEX) on 9/14/18.
 //  Copyright © 2018 Patel, Vandan (ETW - FLEX). All rights reserved.
 //
 //
@@ -12,7 +12,7 @@ import CoreData
 
 
 public class Album: NSManagedObject, Codable {
-
+    
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Album> {
         return NSFetchRequest<Album>(entityName: "Album")
     }
@@ -21,7 +21,7 @@ public class Album: NSManagedObject, Codable {
     @NSManaged public var albumName: String
     @NSManaged public var albumReleaseDate: Date
     @NSManaged public var albumArtwork: String
-    @NSManaged public var albumImage: Data
+    @NSManaged public var albumImage: Data?
     @NSManaged public var copyrightInfo: String
     @NSManaged public var linkToAppStore: String
     @NSManaged public var feed: NSSet?

@@ -17,6 +17,7 @@ class MainViewController: UITableViewController {
     private var feed: Feed?
     private let cellID = "albumCell"
     private lazy var loadingVC = LoadingViewController()
+    let imageDataDispatchGroup = DispatchGroup()
 
     init(persistanceContainer: NSPersistentContainer, networkManager: NetworkManager) {
         self.persistanceContainer = persistanceContainer
@@ -36,26 +37,42 @@ class MainViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         add(loadingVC)
-
         networkManager.getTopAlbums { [weak self] (feed, error) in
             guard let strongSelf = self else { return }
-            DispatchQueue.main.async { strongSelf.loadingVC.remove() }
             if let error = error { strongSelf.handleError(error) }
             if let feed = feed {
                 guard let albumsArray = feed.albums.array as? [Album] else { return }
                 strongSelf.albums = albumsArray
-                DispatchQueue.main.async {
-                    strongSelf.navigationItem.title = feed.title
-                    strongSelf.tableView.reloadData()
-                }
+                strongSelf.loadImageData(albumsArray, feed)
             }
         }
     }
 
     func handleError(_ error: String) {
-        DispatchQueue.main.async {
-            Alert.showAlert(on: self, with: "ERROR", and: error)
+        DispatchQueue.main.async { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.loadingVC.remove()
+            Alert.showAlert(on: strongSelf, with: "ERROR", and: error)
         }
+    }
+
+    fileprivate func loadImageData(_ albumsArray: [Album], _ feed: Feed) {
+        for album in albumsArray {
+            imageDataDispatchGroup.enter()
+            networkManager.getImageData(for: album.albumArtwork, completion: { [weak self] (data, error) in
+                guard let strongSelf = self else { return }
+                if let error = error { strongSelf.handleError(error) }
+                if let data = data { album.albumImage = data }
+                strongSelf.imageDataDispatchGroup.leave()
+            })
+        }
+
+        imageDataDispatchGroup.notify(queue: .main, execute: { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.loadingVC.remove()
+            strongSelf.navigationItem.title = feed.title
+            strongSelf.tableView.reloadData()
+        })
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

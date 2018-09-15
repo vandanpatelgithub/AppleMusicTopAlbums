@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.12.1" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Album" representedClassName=".Album" syncable="YES">
         <attribute name="albumArtwork" attributeType="String" syncable="YES"/>
-        <attribute name="albumImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="albumImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="albumName" attributeType="String" syncable="YES"/>
         <attribute name="albumReleaseDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="artistName" attributeType="String" syncable="YES"/>
