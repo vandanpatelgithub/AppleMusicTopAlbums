@@ -11,7 +11,6 @@ import CoreData
 
 class MainViewController: UITableViewController {
 
-    private let persistanceContainer: NSPersistentContainer
     private let networkManager: NetworkManager
     private var albums = [Album]()
     private var feed: Feed?
@@ -19,8 +18,7 @@ class MainViewController: UITableViewController {
     private lazy var loadingVC = LoadingViewController()
     let imageDataDispatchGroup = DispatchGroup()
 
-    init(persistanceContainer: NSPersistentContainer, networkManager: NetworkManager) {
-        self.persistanceContainer = persistanceContainer
+    init(networkManager: NetworkManager) {
         self.networkManager = networkManager
         super.init(nibName: nil, bundle: nil)
     }
@@ -41,7 +39,9 @@ class MainViewController: UITableViewController {
             guard let strongSelf = self else { return }
             if let error = error { strongSelf.handleError(error) }
             if let feed = feed {
-                guard let albumsArray = feed.albums.array as? [Album] else { return }
+                guard let albumsArray = feed.albums.array as? [Album] else {
+                    return
+                }
                 strongSelf.albums = albumsArray
                 strongSelf.loadImageData(albumsArray, feed)
             }
@@ -60,8 +60,12 @@ class MainViewController: UITableViewController {
         for album in albumsArray {
             imageDataDispatchGroup.enter()
             networkManager.getImageData(for: album.albumArtwork, completion: { [weak self] (data, error) in
-                guard let strongSelf = self else { return }
-                if let error = error { strongSelf.handleError(error) }
+                guard let strongSelf = self else {
+                    return
+                }
+                if let error = error {
+                    strongSelf.handleError(error)
+                }
                 if let data = data { album.albumImage = data }
                 strongSelf.imageDataDispatchGroup.leave()
             })
@@ -71,8 +75,16 @@ class MainViewController: UITableViewController {
             guard let strongSelf = self else { return }
             strongSelf.loadingVC.remove()
             strongSelf.navigationItem.title = feed.title
+            PersistanceManager.shared.save()
+            strongSelf.fetchFeedContainer()
             strongSelf.tableView.reloadData()
         })
+    }
+
+    fileprivate func fetchFeedContainer() {
+        guard (try? PersistanceManager.shared.context.fetch(FeedContainer.fetchRequest()) as? [FeedContainer]) != nil else {
+            return
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

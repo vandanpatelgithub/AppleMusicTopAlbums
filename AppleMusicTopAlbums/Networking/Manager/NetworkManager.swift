@@ -11,14 +11,10 @@ import CoreData
 
 struct NetworkManager {
     private let router = Router<FeedAPI>()
-    let persistanceContainer: NSPersistentContainer
     let context: CodingUserInfoKey
-    let decoder: JSONDecoder
 
-    init(persistanceContainer: NSPersistentContainer, context: CodingUserInfoKey, decoder: JSONDecoder) {
-        self.persistanceContainer = persistanceContainer
+    init(context: CodingUserInfoKey) {
         self.context = context
-        self.decoder = decoder
     }
 
     func getTopAlbums(completion: @escaping (_ feed: Feed?, _ error: String?) -> ()) {
@@ -36,7 +32,12 @@ struct NetworkManager {
                         return
                     }
                     do {
-                        let feedContainer = try self.decoder.decode(FeedContainer.self, from: responseData)
+                        let decoder = JSONDecoder()
+                        decoder.userInfo[self.context] = PersistanceManager.shared.context
+                        decoder.dateDecodingStrategy = .formatted(basicDateFormatter)
+                        
+                        let feedContainer = try decoder.decode(FeedContainer.self, from: responseData)
+                        PersistanceManager.shared.save()
                         guard let feed = feedContainer.feed else {
                             completion(nil, NetworkResponse.unableToCaptureFeed.rawValue)
                             return

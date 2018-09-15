@@ -10,6 +10,9 @@ import Foundation
 import CoreData
 
 final class PersistanceManager {
+    private init() {}
+    static let shared = PersistanceManager()
+    
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "AppleMusicTopAlbums")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
@@ -23,7 +26,6 @@ final class PersistanceManager {
     lazy var context = persistentContainer.viewContext
 
     func save() {
-        let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
                 try context.save()
@@ -32,6 +34,8 @@ final class PersistanceManager {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        } else {
+            print("There are no changes in context.")
         }
     }
 }

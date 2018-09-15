@@ -22,16 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return false
         }
 
-        let persistanceContainer = PersistanceManager().persistentContainer
-        let decoder = JSONDecoder()
-        decoder.userInfo[context] = persistanceContainer.viewContext
-        decoder.dateDecodingStrategy = .formatted(basicDateFormatter)
+        let netManager = NetworkManager(context: context)
 
-        let netManager = NetworkManager(persistanceContainer: persistanceContainer,
-                                        context: context,
-                                        decoder: decoder)
-
-        let mainVC = MainViewController(persistanceContainer: persistanceContainer, networkManager: netManager)
+        let mainVC = MainViewController(networkManager: netManager)
         let navVC = UINavigationController(rootViewController: mainVC)
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()
