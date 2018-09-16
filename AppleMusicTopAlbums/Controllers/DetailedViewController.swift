@@ -17,7 +17,7 @@ class DetailedViewController: UIViewController {
             artistNameLabel.text = album.artistName
             albumReleaseDate.text = basicDateFormatter.string(from: album.albumReleaseDate)
             albumCopyrightInfo.text = album.copyrightInfo
-            linkToAppStore.setTitle(album.linkToAppStore, for: .normal)
+            linkToAppStore.text = album.linkToAppStore
         }
     }
 
@@ -76,23 +76,20 @@ class DetailedViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 14.0)
+        label.font = UIFont.italicSystemFont(ofSize: 14.0)
         label.textColor = .gray
         label.numberOfLines = 0
         return label
     }()
 
-    private lazy var linkToAppStore: UIButton = {
-        let button = UIButton()
-        button.setTitle("Go To AppStore", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont.italicSystemFont(ofSize: 14.0)
-        button.titleLabel?.numberOfLines = 2
-        button.titleLabel?.textAlignment = .center
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.titleLabel?.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(linkToAppStoreTapped(_:)), for: .touchUpInside)
-        return button
+    private lazy var linkToAppStore: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 14.0)
+        label.textColor = .gray
+        label.numberOfLines = 0
+        return label
     }()
 
     override func viewDidLoad() {
@@ -149,21 +146,7 @@ class DetailedViewController: UIViewController {
         let linkToAppStoreConstraints = [
             linkToAppStore.leadingAnchor.constraint(equalTo: albumImageView.leadingAnchor, constant: 0),
             linkToAppStore.trailingAnchor.constraint(equalTo: albumImageView.trailingAnchor, constant: 0),
-            linkToAppStore.heightAnchor.constraint(equalToConstant: 50.0)
         ]
         NSLayoutConstraint.activate(linkToAppStoreConstraints)
-    }
-
-    // MARK: Actions
-    @objc fileprivate func linkToAppStoreTapped(_ sender: UIButton) {
-        sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
-        UIView.animate(withDuration: 0.2, animations: {
-            sender.transform = .identity
-        }) { [weak self] (_) in
-            guard let strongSelf = self, let url = URL(string: strongSelf.album.linkToAppStore) else { return }
-            if UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
-        }
     }
 }
