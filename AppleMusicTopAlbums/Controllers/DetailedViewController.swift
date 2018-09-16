@@ -87,9 +87,10 @@ class DetailedViewController: UIViewController {
         button.setTitle("Go To AppStore", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = UIFont.italicSystemFont(ofSize: 14.0)
-        button.titleLabel?.numberOfLines = 0
+        button.titleLabel?.numberOfLines = 2
         button.titleLabel?.textAlignment = .center
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(linkToAppStoreTapped(_:)), for: .touchUpInside)
         return button
     }()
@@ -147,7 +148,8 @@ class DetailedViewController: UIViewController {
 
         let linkToAppStoreConstraints = [
             linkToAppStore.leadingAnchor.constraint(equalTo: albumImageView.leadingAnchor, constant: 0),
-            linkToAppStore.trailingAnchor.constraint(equalTo: albumImageView.trailingAnchor, constant: 0)
+            linkToAppStore.trailingAnchor.constraint(equalTo: albumImageView.trailingAnchor, constant: 0),
+            linkToAppStore.heightAnchor.constraint(equalToConstant: 50.0)
         ]
         NSLayoutConstraint.activate(linkToAppStoreConstraints)
     }
