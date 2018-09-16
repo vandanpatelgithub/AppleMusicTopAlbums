@@ -39,6 +39,7 @@
 		07BFDEB2214A28190057069A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEB1214A28190057069A /* NetworkManager.swift */; };
 		07BFDEB4214A29F40057069A /* FeedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEB3214A29F40057069A /* FeedEndpoint.swift */; };
 		07BFDEB6214A304F0057069A /* FeedEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFDEB5214A304F0057069A /* FeedEndpointTests.swift */; };
+		07E26EE8214E2A7D0061AF3A /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E26EE7214E2A7D0061AF3A /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		07BFDEB1214A28190057069A /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		07BFDEB3214A29F40057069A /* FeedEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpoint.swift; sourceTree = "<group>"; };
 		07BFDEB5214A304F0057069A /* FeedEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpointTests.swift; sourceTree = "<group>"; };
+		07E26EE7214E2A7D0061AF3A /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			children = (
 				07AA46D22148DF9000DFC3DA /* MainViewController.swift */,
 				0738007E214C2444003096F9 /* LoadingViewController.swift */,
+				07E26EE7214E2A7D0061AF3A /* DetailedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 			files = (
 				07BFDEB2214A28190057069A /* NetworkManager.swift in Sources */,
 				0765FCAB214C6650006D3AFB /* Alert.swift in Sources */,
+				07E26EE8214E2A7D0061AF3A /* DetailedViewController.swift in Sources */,
 				07BFDEAF214A27E10057069A /* JSONParameterEncoder.swift in Sources */,
 				0765FCB6214D87A1006D3AFB /* MainAlbumViewModel.swift in Sources */,
 				07BFDEA7214A27AC0057069A /* Router.swift in Sources */,

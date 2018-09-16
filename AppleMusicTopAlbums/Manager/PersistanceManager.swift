@@ -34,8 +34,6 @@ final class PersistanceManager {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
-        } else {
-            print("There are no changes in context.")
         }
     }
 }

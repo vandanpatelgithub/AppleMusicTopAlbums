@@ -39,7 +39,7 @@ extension UIViewController {
     }
 
     func remove() {
-        guard parent != nil else {
+        guard parent != nil, (parent?.children.count) != 0 else {
             return
         }
 

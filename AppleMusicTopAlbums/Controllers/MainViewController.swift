@@ -13,6 +13,7 @@ class MainViewController: UITableViewController {
 
     private let networkManager: NetworkManager
     private var albums = [MainAlbumViewModel]()
+    private var detailedAlbums = [Album]()
     private var feed: Feed?
     private let cellID = "albumCell"
     private lazy var loadingVC = LoadingViewController()
@@ -29,15 +30,15 @@ class MainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Top Albums"
         tableView.register(AlbumCell.self, forCellReuseIdentifier: cellID)
-    }
+        tableView.separatorStyle = .none
 
-    override func viewWillAppear(_ animated: Bool) {
         add(loadingVC)
         networkManager.getTopAlbums { [weak self] (feed, error) in
             guard let strongSelf = self else { return }
-            if let error = error { strongSelf.handleError(error) }
+            if let error = error {
+                strongSelf.handleError(error)
+            }
             if let feed = feed {
                 guard let albumsArray = feed.albums.array as? [Album] else { return }
                 strongSelf.loadImageData(albumsArray, feed)
@@ -45,11 +46,19 @@ class MainViewController: UITableViewController {
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        // Network call can be made here if we want to fetch data everytime the screen appears
+    }
+
     func handleError(_ error: String) {
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.loadingVC.remove()
-            Alert.showAlert(on: strongSelf, with: "ERROR", and: error)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: { (_) in
+                strongSelf.fetchFeedContainer()
+            })
+            let alert = Alert(vc: strongSelf, title: "ERROR", message: error, actions: [okAction])
+            alert.showAlert()
         }
     }
 
@@ -81,10 +90,12 @@ class MainViewController: UITableViewController {
             return
         }
         navigationItem.title = theFeed.title
+        detailedAlbums = theAlbums
         albums = theAlbums.map({ return MainAlbumViewModel(album: $0) })
-        tableView.reloadData()
+        DispatchQueue.main.async { self.tableView.reloadData() }
     }
 
+    // MARK: Datasource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return albums.count
     }
@@ -93,11 +104,35 @@ class MainViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? AlbumCell else {
             return UITableViewCell()
         }
+        cell.selectionStyle = .none
         cell.mainAlbumViewModel = albums[indexPath.row]
         return cell
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 232.0
+        return 252.0
+    }
+
+    // MARK: Delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        UIView.animate(withDuration: 0.3, animations: {
+            cell.transform = .identity
+        }) { [weak self] (_) in
+            guard let strongSelf = self else { return }
+            let detailedVC = DetailedViewController()
+            detailedVC.album = strongSelf.detailedAlbums[indexPath.row]
+            strongSelf.navigationController?.pushViewController(detailedVC, animated: true)
+        }
+    }
+
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform(translationX: -250, y: 0)
+        cell.alpha = 0.0
+        UIView.animate(withDuration: 0.6) {
+            cell.transform = .identity
+            cell.alpha = 1.0
+        }
     }
 }

@@ -9,9 +9,24 @@
 import UIKit
 
 struct Alert {
-    static func showAlert(on vc: UIViewController, with title: String, and message: String) {
+
+    let vc: UIViewController
+    let title: String
+    let message: String
+    let actions: [UIAlertAction]
+
+    init(vc: UIViewController, title: String, message: String, actions: [UIAlertAction]) {
+        self.vc        = vc
+        self.title     = title
+        self.message   = message
+        self.actions   = actions
+    }
+
+    func showAlert() {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        for action in actions {
+            alert.addAction(action)
+        }
         vc.present(alert, animated: true)
     }
 }

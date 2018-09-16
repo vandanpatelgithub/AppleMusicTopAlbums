@@ -27,6 +27,7 @@ class AlbumCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.font = UIFont.boldSystemFont(ofSize: 20.0)
+        label.numberOfLines = 0
         return label
     }()
 
@@ -37,6 +38,7 @@ class AlbumCell: UITableViewCell {
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 14.0)
         label.textColor = .gray
+        label.numberOfLines = 0
         return label
     }()
 
@@ -84,16 +86,14 @@ class AlbumCell: UITableViewCell {
         let albumNameLabelConstraints = [
             albumNameLabel.leadingAnchor.constraint(equalTo: albumImageView.trailingAnchor, constant: 16),
             albumNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            albumNameLabel.topAnchor.constraint(equalTo: albumImageView.topAnchor, constant: 0),
-            albumNameLabel.heightAnchor.constraint(equalToConstant: 20.0)
+            albumNameLabel.topAnchor.constraint(equalTo: albumImageView.topAnchor, constant: 0)
         ]
         NSLayoutConstraint.activate(albumNameLabelConstraints)
 
         let artistNameLabelConstraints = [
             artistNameLabel.leadingAnchor.constraint(equalTo: albumImageView.trailingAnchor, constant: 16),
             artistNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor, constant: 8),
-            artistNameLabel.heightAnchor.constraint(equalToConstant: 20.0)
+            artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor, constant: 8)
         ]
         NSLayoutConstraint.activate(artistNameLabelConstraints)
     }

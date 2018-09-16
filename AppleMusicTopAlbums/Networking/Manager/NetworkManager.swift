@@ -20,7 +20,7 @@ struct NetworkManager {
     func getTopAlbums(completion: @escaping (_ feed: Feed?, _ error: String?) -> ()) {
         router.request(.topAlbums) { (data, response, error) in
             if error != nil {
-                completion(nil, "Please check your network connection.")
+                completion(nil, "Please check your network connection. Click OK to fetch offline data.")
             }
 
             if let response = response as? HTTPURLResponse {
@@ -56,7 +56,7 @@ struct NetworkManager {
     func getImageData(for imageURL: String ,completion: @escaping (_ imageData: Data?, _ error: String?) -> ()) {
         router.request(.imageData(imageURL: imageURL)) { (data, response, error) in
             if error != nil {
-                completion(nil, "Please check your network connection.")
+                completion(nil, "Please check your network connection. Click OK to fetch offline data.")
             }
 
             if let response = response as? HTTPURLResponse {
