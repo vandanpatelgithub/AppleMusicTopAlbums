@@ -110,7 +110,7 @@ class MainViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 252.0
+        return (view.frame.width / 2) + 24.0
     }
 
     // MARK: Delegate

@@ -11,7 +11,6 @@ import UIKit
 class AlbumCell: UITableViewCell {
 
     // MARK: Outlets Initialization
-
     private lazy var albumImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -26,7 +25,7 @@ class AlbumCell: UITableViewCell {
         label.text = "Default Album Name"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
-        label.font = UIFont.boldSystemFont(ofSize: 20.0)
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
         label.numberOfLines = 0
         return label
     }()
@@ -86,7 +85,7 @@ class AlbumCell: UITableViewCell {
         let albumNameLabelConstraints = [
             albumNameLabel.leadingAnchor.constraint(equalTo: albumImageView.trailingAnchor, constant: 16),
             albumNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            albumNameLabel.topAnchor.constraint(equalTo: albumImageView.topAnchor, constant: 0)
+            albumNameLabel.topAnchor.constraint(equalTo: albumImageView.topAnchor, constant: 8)
         ]
         NSLayoutConstraint.activate(albumNameLabelConstraints)
 
