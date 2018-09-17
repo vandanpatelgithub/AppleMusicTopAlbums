@@ -12,6 +12,8 @@
 		0765FCAE214C6E06006D3AFB /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765FCAC214C6E06006D3AFB /* Album+CoreDataClass.swift */; };
 		0765FCB6214D87A1006D3AFB /* MainAlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765FCB5214D87A1006D3AFB /* MainAlbumViewModel.swift */; };
 		0765FCB8214D8A4A006D3AFB /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765FCB7214D8A4A006D3AFB /* AlbumCell.swift */; };
+		078C299A214F5DB400B8AE61 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C2999214F5DB400B8AE61 /* DateFormatterTests.swift */; };
+		078C299C214F611400B8AE61 /* PersistanceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078C299B214F611400B8AE61 /* PersistanceManagerTests.swift */; };
 		07AA46A12148D90200DFC3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A02148D90200DFC3DA /* AppDelegate.swift */; };
 		07AA46A92148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AA46A72148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodeld */; };
 		07AA46AB2148D90300DFC3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AA46AA2148D90300DFC3DA /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		0765FCAC214C6E06006D3AFB /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0765FCB5214D87A1006D3AFB /* MainAlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlbumViewModel.swift; sourceTree = "<group>"; };
 		0765FCB7214D8A4A006D3AFB /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		078C2999214F5DB400B8AE61 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
+		078C299B214F611400B8AE61 /* PersistanceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManagerTests.swift; sourceTree = "<group>"; };
 		07AA469D2148D90200DFC3DA /* AppleMusicTopAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicTopAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AA46A02148D90200DFC3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AA46A82148D90200DFC3DA /* AppleMusicTopAlbums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppleMusicTopAlbums.xcdatamodel; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				07AA46D42148E06E00DFC3DA /* Stubs */,
 				07BFDE8D2149DC840057069A /* DecodingJSONResponseTests.swift */,
 				07BFDEB5214A304F0057069A /* FeedEndpointTests.swift */,
+				078C2999214F5DB400B8AE61 /* DateFormatterTests.swift */,
+				078C299B214F611400B8AE61 /* PersistanceManagerTests.swift */,
 				07AA46BA2148D90300DFC3DA /* Info.plist */,
 			);
 			path = AppleMusicTopAlbumsTests;
@@ -418,7 +424,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07BFDEB6214A304F0057069A /* FeedEndpointTests.swift in Sources */,
+				078C299A214F5DB400B8AE61 /* DateFormatterTests.swift in Sources */,
 				07BFDE8E2149DC840057069A /* DecodingJSONResponseTests.swift in Sources */,
+				078C299C214F611400B8AE61 /* PersistanceManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import XCTest
 @testable import AppleMusicTopAlbums
 
 class DecodingJSONResponseTests: XCTestCase {
-    let persistanceContainer = PersistanceManager().persistentContainer
+    let persistanceContainer = PersistanceManager.shared.persistentContainer
 
     func testDecodingJSONResponseSuccess() {
         guard
