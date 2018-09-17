@@ -97,6 +97,9 @@ class DetailedViewController: UIViewController {
     private lazy var linkToAppStore: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(linkLabedTapped(_:)))
+        label.addGestureRecognizer(tapGesture)
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 14.0)
         label.textColor = .gray
@@ -212,5 +215,19 @@ class DetailedViewController: UIViewController {
             linkToAppStore.trailingAnchor.constraint(equalTo: albumImageView.trailingAnchor, constant: 0),
         ]
         NSLayoutConstraint.activate(linkToAppStoreConstraints)
+    }
+
+    // MARK: Actions
+    @objc fileprivate func linkLabedTapped(_ sender: UITapGestureRecognizer) {
+        let label = sender.view as! UILabel
+        label.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        UIView.animate(withDuration: 0.5, animations: {
+            label.transform = .identity
+        }) { [weak self] (_) in
+            guard let strongSelf = self, let url = URL(string: strongSelf.album.linkToAppStore) else { return }
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
     }
 }
