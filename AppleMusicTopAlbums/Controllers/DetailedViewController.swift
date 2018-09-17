@@ -15,7 +15,7 @@ class DetailedViewController: UIViewController {
             albumImageView.image = UIImage(data: album.albumImage ?? Data())
             albumNameLabel.text = album.albumName
             artistNameLabel.text = album.artistName
-            albumReleaseDate.text = basicDateFormatter.string(from: album.albumReleaseDate)
+            albumReleaseDate.text = userFriendlyDateFormatter.string(from: album.albumReleaseDate)
             albumCopyrightInfo.text = album.copyrightInfo
             linkToAppStore.text = album.linkToAppStore
         }
@@ -35,8 +35,9 @@ class DetailedViewController: UIViewController {
     private lazy var albumImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
+        imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 16.0
         return imageView
     }()

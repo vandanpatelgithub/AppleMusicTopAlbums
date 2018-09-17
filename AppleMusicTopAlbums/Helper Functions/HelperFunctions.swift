@@ -23,3 +23,9 @@ var basicDateFormatter: DateFormatter {
     formatter.dateFormat = "yyyy-MM-dd"
     return formatter
 }
+
+var userFriendlyDateFormatter: DateFormatter {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "MMM d, yyyy"
+    return formatter
+}
