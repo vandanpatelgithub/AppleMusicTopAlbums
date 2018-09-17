@@ -39,6 +39,7 @@ class DetailedViewController: UIViewController {
         imageView.layer.masksToBounds = true
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 16.0
+        imageView.alpha = 0.0
         return imageView
     }()
 
@@ -49,6 +50,7 @@ class DetailedViewController: UIViewController {
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 20.0)
         label.numberOfLines = 0
+        label.alpha = 0.0
         return label
     }()
 
@@ -60,6 +62,7 @@ class DetailedViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 14.0)
         label.textColor = .gray
         label.numberOfLines = 0
+        label.alpha = 0.0
         return label
     }()
 
@@ -70,6 +73,7 @@ class DetailedViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 14.0)
         label.textColor = .gray
         label.numberOfLines = 0
+        label.alpha = 0.0
         return label
     }()
 
@@ -80,6 +84,7 @@ class DetailedViewController: UIViewController {
         label.font = UIFont.italicSystemFont(ofSize: 14.0)
         label.textColor = .gray
         label.numberOfLines = 0
+        label.alpha = 0.0
         return label
     }()
 
@@ -90,14 +95,50 @@ class DetailedViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 14.0)
         label.textColor = .gray
         label.numberOfLines = 0
+        label.alpha = 0.0
         return label
     }()
 
+    // MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupSubViews()
         setupConstraints()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        animateLabelsAndImage()
+    }
+
+    // MARK: Animation
+    fileprivate func animateLabelsAndImage() {
+        albumImageView.transform = CGAffineTransform(translationX: -250.0, y: 0)
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+            self?.albumImageView.transform = .identity
+            self?.albumImageView.alpha = 1.0
+        }, completion: nil)
+
+        UIView.animate(withDuration: 0.1, animations: { [weak self] in
+            self?.albumNameLabel.alpha = 1.0
+        }) { (_) in
+            UIView.animate(withDuration: 0.1, animations: { [weak self] in
+                self?.artistNameLabel.alpha = 1.0
+                }, completion: { (_) in
+                    UIView.animate(withDuration: 0.1, animations: { [weak self] in
+                        self?.albumReleaseDate.alpha = 1.0
+                        }, completion: { (_) in
+                            UIView.animate(withDuration: 0.1, animations: { [weak self] in
+                                self?.albumCopyrightInfo.alpha = 1.0
+                                }, completion: { (_) in
+                                    UIView.animate(withDuration: 0.1, animations: { [weak self] in
+                                        self?.linkToAppStore.alpha = 1.0
+                                        }, completion: nil)
+                            })
+                    })
+            })
+        }
     }
 
     // MARK: Add Subviews
