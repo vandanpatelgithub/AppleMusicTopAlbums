@@ -23,13 +23,19 @@ class DetailedViewController: UIViewController {
 
     // MARK: UI Initialization
 
-    private var stackView: UIStackView = {
+    private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
         stackView.spacing = 12.0
         return stackView
+    }()
+
+    private lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
     }()
 
     private lazy var albumImageView: UIImageView = {
@@ -112,6 +118,11 @@ class DetailedViewController: UIViewController {
         animateLabelsAndImage()
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        scrollView.contentSize = CGSize(width: stackView.frame.width, height: stackView.frame.height)
+    }
+
     // MARK: Animation
     fileprivate func animateLabelsAndImage() {
         albumImageView.transform = CGAffineTransform(translationX: -250.0, y: 0)
@@ -143,7 +154,8 @@ class DetailedViewController: UIViewController {
 
     // MARK: Add Subviews
     fileprivate func setupSubViews() {
-        view.addSubview(stackView)
+        view.addSubview(scrollView)
+        scrollView.addSubview(stackView)
         stackView.addArrangedSubview(albumImageView)
         stackView.addArrangedSubview(albumNameLabel)
         stackView.addArrangedSubview(artistNameLabel)
@@ -154,10 +166,20 @@ class DetailedViewController: UIViewController {
 
     // MARK: Add Constraints
     fileprivate func setupConstraints() {
+        let scrollViewConstraints = [
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -32),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 32),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32)
+        ]
+        NSLayoutConstraint.activate(scrollViewConstraints)
+
         let stackViewConstraints = [
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -32),
-            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16)
+            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 0),
+            stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0),
+            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 16),
+            stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 0),
+            stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ]
         NSLayoutConstraint.activate(stackViewConstraints)
 

@@ -77,9 +77,9 @@ class AlbumCell: UITableViewCell {
     fileprivate func setupConstraints() {
         let albumImageViewConstraints = [
             albumImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            albumImageView.widthAnchor.constraint(equalToConstant: 200.0),
+            albumImageView.widthAnchor.constraint(equalToConstant: (frame.width)/2),
             albumImageView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-            albumImageView.heightAnchor.constraint(equalToConstant: 200.0)
+            albumImageView.heightAnchor.constraint(equalToConstant: (frame.width)/2)
         ]
         NSLayoutConstraint.activate(albumImageViewConstraints)
 
